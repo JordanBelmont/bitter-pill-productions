@@ -1,0 +1,49 @@
+.foot-container,
+.icon-container {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+}
+
+.icon-container {
+   margin-top: 15px;
+}
+
+.foot-icon,
+.code-icon {
+   width: 50px;
+   margin: 0px 10px;
+   color: black;
+}
+
+.icon-link {
+   margin-top: 20px;
+}
+
+/* * IPAD * */
+@media only screen and (min-width: 768px) {
+
+   .foot-link,
+   .icon-link {
+      outline-color: var(--pillpink);
+   }
+
+   .foot-icon:hover,
+   .foot-link:focus .foot-icon {
+      filter: invert(30%) sepia() saturate(1000%) hue-rotate(280deg) contrast(80%);
+      transition: .2s ease-in-out;
+   }
+
+   .code-icon:hover,
+   .icon-link:focus .code-icon {
+      filter: invert(5%) sepia() saturate(1000%) hue-rotate(280deg) contrast(75%);
+      transition: .2s ease-in-out;
+   }
+}
+
+/* * MACBOOK PRO * */
+@media only screen and (min-width: 1280px) {
+   .icon-container {
+      margin-bottom: 10px;
+   }
+}
