@@ -1,0 +1,132 @@
+.code-display {
+   margin: 30px 40px 30px 40px;
+}
+
+.code-card {
+   position: relative;
+   padding: 20px 20px 20px 20px;
+   margin-bottom: 1.250em;
+   box-shadow: 0 3px 7px -1px hsl(0, 0%, 20%);
+   color: var(--dark4);
+   font-family: 'Nasal';
+   text-align: center;
+   border-radius: 5px;
+   background-color: var(--light2);
+}
+
+.code-background-1,
+.code-background-2,
+.code-background-3,
+.code-background-4 {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   padding: 28%;
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+.code-background-1 {
+   background-image: url("../images/code-images/Code-1.jpg")
+}
+
+.code-background-2 {
+   background-image: url("../images/code-images/Code-2.jpg")
+}
+
+.code-background-3 {
+   background-image: url("../images/code-images/Code-3.jpg")
+}
+
+.code-background-4 {
+   background-image: url("../images/code-images/Code-4.jpg")
+}
+
+.code-title {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   margin-top: 15px;
+   font-family: 'Nasal';
+   font-size: 24px;
+   font-weight: bold;
+   letter-spacing: 2px;
+   line-height: 25px;
+   text-transform: uppercase;
+}
+
+.code-title:after,
+.code-title:before {
+   content: '';
+   width: 100px;
+   height: 2px;
+   margin: 0 10px;
+   background: var(--pillpink);
+}
+
+.code-heading {
+   margin-top: 15px;
+   font-family: 'Nasal';
+   font-size: 20px;
+   font-weight: bold;
+   letter-spacing: 2px;
+   text-transform: uppercase;
+}
+
+.code-stats {
+   margin-top: 10px;
+   font-size: 20px;
+   letter-spacing: 1px;
+}
+
+.code-image {
+   width: 100%;
+}
+
+/* * IPAD * */
+@media only screen and (min-width: 768px) {
+   /* .code-container {
+      outline-color: #551D45;
+   }  */
+
+   .code-background-1,
+   .code-background-2,
+   .code-background-3,
+   .code-background-4 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 21.3%;
+      background-size: cover;
+      background-repeat: no-repeat;
+   }
+
+   .code-background-1:hover,
+   .code-background-2:hover,
+   .code-background-3:hover,
+   .code-background-4:hover,
+   .code-container:focus .code-background-1 {
+      filter: brightness(25%);
+      transition: .3s ease-in-out;
+   }
+
+   .code-card {
+      margin-bottom: 0;
+      max-height: 100%;
+   }
+}
+
+/* * MACBOOK PRO * */
+@media only screen and (min-width: 1280px) {
+
+   .code-background-1,
+   .code-background-2,
+   .code-background-3,
+   .code-background-4 {
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+   }
+}
