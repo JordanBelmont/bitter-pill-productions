@@ -1,0 +1,99 @@
+/* * IPAD * */
+@media only screen and (min-width: 768px) {
+   .art-display {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 3em;
+      grid-row-gap: 3em;
+   }
+
+   .art-1,
+   .art-2,
+   .art-3,
+   .art-6,
+   .art-7,
+   .art-8,
+   .art-13,
+   .art-14,
+   .art-15,
+   .art-18,
+   .art-19,
+   .art-20 {
+      grid-column: span 1;
+      grid-row: span 1;
+   }
+
+   .art-4,
+   .art-5,
+   .art-16,
+   .art-17 {
+      grid-column: span 2;
+      grid-row: span 1;
+   }
+}
+
+/* * MACBOOK PRO * */
+@media only screen and (min-width: 1280px) {
+   .art-display {
+      grid-template-columns: repeat(6, 1fr);
+      grid-column-gap: 3em;
+      grid-row-gap: 3em;
+   }
+
+   .art-1,
+   .art-2,
+   .art-3,
+   .art-6,
+   .art-7,
+   .art-8,
+   .art-13,
+   .art-14,
+   .art-15,
+   .art-18,
+   .art-19,
+   .art-20 {
+      grid-column: span 2;
+      grid-row: span 1;
+   }
+
+   .art-4,
+   .art-5,
+   .art-16,
+   .art-17 {
+      grid-column: span 3;
+      grid-row: span 1;
+   }
+}
+
+/* * IMAC * */
+@media only screen and (min-width: 1537px) and (max-width: 2560px) {
+   .art-display {
+      grid-template-columns: repeat(4, 1fr);
+      grid-column-gap: 3em;
+      grid-row-gap: 3em;
+   }
+
+   .art-1,
+   .art-2,
+   .art-3,
+   .art-6,
+   .art-7,
+   .art-8,
+   .art-13,
+   .art-14,
+   .art-15,
+   .art-18,
+   .art-19,
+   .art-20 {
+      grid-column: span 1;
+      grid-row: span 1;
+   }
+
+   .art-4,
+   .art-5,
+   .art-16,
+   .art-17 {
+      grid-column: span 2;
+      grid-row: span 1;
+   }
+}
