@@ -1,0 +1,118 @@
+.dark-theme,
+.dark-theme header {
+   background-color: var(--dark2);
+}
+
+.dark-theme .nav-link,
+.dark-theme > footer > p {
+   color: var(--light1);
+   outline-color: var(--pillpink);
+}
+
+.dark-theme .pill-link,
+.dark-theme .nav-link,
+.dark-theme .art-link,
+.dark-theme .icon-link,
+.dark-theme .pixel-link,
+.dark-theme .blog-link,
+.dark-theme .bio-link {
+   outline-color: var(--pillpink);
+}
+
+.dark-theme .line {
+   stroke: var(--light2);
+}
+
+.dark-theme .code-card,
+.dark-theme .blog-card,
+.dark-theme .pixel-card,
+.dark-theme .article-card {
+   color: var(--light3);
+   background-color: var(--dark3);
+   box-shadow: 0 3px 7px -1px hsl(0, 0%, 0%);
+}
+
+.dark-theme .code-title:after, 
+.dark-theme .pixel-title:before,
+.dark-theme .blog-title:after,
+.dark-theme .blog-title:before,
+.dark-theme .article-title:after, 
+.dark-theme .article-title:before,
+.dark-theme .profile-title-container:after, 
+.dark-theme .profile-title-container:before, 
+.dark-theme .contact-title-container:after, 
+.dark-theme .contact-title-container:before {
+   background-color: var(--pillpink);
+}
+
+.dark-theme .art-link, 
+.dark-theme .pixel-link, 
+.dark-theme .icon-link, 
+.dark-theme .blog-link, 
+.dark-theme .bio-link,
+.dark-theme .nav-link:hover,
+.dark-theme .nav-link:focus,
+.dark-theme .back:hover,
+.dark-theme .back:focus {
+   color: var(--pillpink);
+   outline-color: var(--pillpink);
+}
+
+.dark-theme .back,
+.dark-theme .profile-title-container, 
+.dark-theme .contact-title-container,
+.dark-theme .profile-container, 
+.dark-theme .contact-container,
+.dark-theme .error-text,
+.dark-theme .sothoth-answer {
+   color: var(--light3);
+   outline-color: var(--pillpink);
+}
+
+.dark-theme .pixel-container {
+   background-color: var(--dark4);
+}
+
+.dark-theme .pixel-image {
+   background-color: var(--dark1);
+}
+
+.dark-theme .contact-input, 
+.dark-theme .contact-textarea {
+   border: 2px solid var(--light4);
+   color: var(--light1);
+   background-color: var(--dark1);
+}
+
+.dark-theme .contact-input:focus,
+.dark-theme .contact-textarea:focus {
+   border: 2px solid var(--light1);
+}
+
+.dark-theme .submit-button {
+   color: var(--light3);
+   background-color: var(--dark1);
+}
+
+.dark-theme .submit-button:focus {
+   border: 2px solid var(--light1);
+   border-radius: 5px;
+   outline: none;
+   color: white;
+}
+
+.dark-theme .foot-link,
+.dark-theme .icon-link {
+   filter: invert(100%);
+}
+
+.dark-theme .foot-icon:hover,
+.dark-theme .foot-link:focus .foot-icon {
+   filter: invert(40%) sepia() saturate(1000%) hue-rotate(85deg) contrast(80%);
+   transition: .2s ease-in-out;
+}
+
+.dark-theme .code-icon:hover,
+.dark-theme .icon-link:focus .code-icon {
+   filter: invert(28%) sepia() saturate(380%) hue-rotate(50deg) contrast(180%);
+}
