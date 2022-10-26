@@ -7,6 +7,7 @@
       grid-row-gap: 3em;
    }
 
+   .blog-display,
    .code-display {
       display: grid;
       grid-template-columns: 1fr;
@@ -39,6 +40,9 @@
    .art-18,
    .art-19,
    .art-20,
+   .blog-1,
+   .blog-2,
+   .blog-3,
    .bio-3,
    .bio-6,
    .pixel-1 {
@@ -71,6 +75,7 @@
       grid-row-gap: 3em;
    }
 
+   .blog-display,
    .code-display {
       grid-template-columns: repeat(2, 1fr);
       grid-column-gap: 3em;
@@ -118,6 +123,9 @@
    }
 }
 
+   .blog-1,
+   .blog-2,
+   .blog-3,
    .code-1,
    .code-2,
    .code-3,
@@ -141,6 +149,7 @@
       grid-row-gap: 3em;
    }
 
+   .blog-display,
    .code-display {
       grid-template-columns: repeat(3, 1fr);
       grid-column-gap: 3em;
@@ -172,6 +181,9 @@
    .art-18,
    .art-19,
    .art-20,
+   .blog-1,
+   .blog-2,
+   .blog-3,
    .code-1,
    .code-2,
    .code-3,
