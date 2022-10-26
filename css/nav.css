@@ -123,6 +123,87 @@ li {
    stroke-width: 6;
 }
 
+/* DARK MODE TOGGLE */
+
+.toggle-btn {
+   position: absolute;
+   top: 1.9em;
+   right: 2.5em;
+   width: 36.25px;
+   height: 18.5px;
+   margin: 0 auto;
+   border-radius: 40px;
+}
+
+.check {
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   right: 0px;
+   bottom: 0px;
+   width: 100%;
+   height: 100%;
+   margin: 0px;
+   cursor: pointer;
+   opacity: 0;
+   z-index: 2;
+}
+
+.toggle-btn span {
+   position: absolute;
+   overflow: hidden;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   background-color: black;
+   border-radius: 40px;
+   opacity: 1;
+   transition: 0.2s ease background-color, 0.2s ease opacity;
+}
+
+.toggle-btn span:before,
+.toggle-btn span:after {
+   content: '';
+   position: absolute;
+   top: 2.8px;
+   left: -5px;
+   width: 13px;
+   height: 13px;
+   border-radius: 50%;
+   transition: 0.5s ease transform, 0.2s ease background-color;
+}
+
+.toggle-btn span:before {
+   background-color: black;
+   transform: translate(-58px, 0px);
+   z-index: 1;
+}
+
+.toggle-btn span:after {
+   background-color: var(--light2);
+   transform: translate(8px, 0px);
+   z-index: 0;
+}
+
+.toggle-btn .check:checked + span {
+   background-color: var(--light2);
+}
+
+.toggle-btn .check:active + span {
+   opacity: 0.5;
+}
+
+.toggle-btn .check:checked + span:before {
+   background-color: var(--light2);
+   transform: translate(18px, -2.5px);
+}
+
+.toggle-btn .check:checked + span:after {
+   background-color: black;
+   transform: translate(24.75px, 0px);
+}
+
 /* * IPAD * */
 @media only screen and (min-width: 768px) {
    nav {
@@ -142,5 +223,28 @@ li {
 
    li {
       align-items: flex-end;
+   }
+
+   .toggle-btn {
+      top: 1.16em;
+      right: 3em;
+      width: 72.5px;
+      height: 37px;
+   }
+
+   .toggle-btn span:before,
+   .toggle-btn span:after {
+      top: 5px;
+      left: -2px; 
+      width: 26px;
+      height: 26px; 
+   }
+
+   .toggle-btn .check:checked + span:before {
+      transform: translate(32px, -5px);
+   }
+
+   .toggle-btn .check:checked + span:after {
+      transform: translate(43.5px, 0px);
    }
 }
