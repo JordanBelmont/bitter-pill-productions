@@ -1,0 +1,95 @@
+header {
+   z-index: 2;
+   position: sticky;
+   text-align: center;
+   top: 0px;
+   background-color: var(--light1);
+}
+
+.pill-light {
+   width: 5em;
+   margin: 0.625em;
+}
+
+.pill-dark {
+   width: 5em;
+}
+
+.pill-link,
+.nav-link,
+.art-link,
+.pixel-link,
+.code-link,
+.blog-link,
+.bio-link {
+   outline-color: var(--pillpink);
+}
+
+nav {
+   display: none;
+}
+
+.nav-ul {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   list-style: none;
+}
+
+li {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 2.5em;
+}
+
+.nav-link {
+   font-family: 'Nasal';
+   font-size: 1em;
+   font-weight: bold;
+   text-decoration: none;
+   letter-spacing: 0.125em;
+   color: black;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+   color: var(--pillpink);
+   transition: .3s ease-in-out;
+}
+
+.art-link, 
+.code-link, 
+.pixel-link, 
+.blog-link, 
+.bio-link {
+   display: inline-block;
+   font-family: 'Nasal';
+   font-size: 1em;
+   font-weight: bold;
+   letter-spacing: 0.125em;
+   text-decoration: none;
+   color: var(--pillpink);
+}
+
+/* * IPAD * */
+@media only screen and (min-width: 768px) {
+   nav {
+      display: inline;
+   }
+
+   .nav-ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      padding-bottom: 1.250em;
+   }
+
+   .burger-button {
+      display: none;
+   }
+
+   li {
+      align-items: flex-end;
+   }
+}
