@@ -143,27 +143,4 @@ li {
    li {
       align-items: flex-end;
    }
-
-   .toggle-btn {
-      top: 1.16em;
-      right: 3em;
-      width: 72.5px;
-      height: 37px;
-   }
-
-   .toggle-btn span:before,
-   .toggle-btn span:after {
-      top: 5px;
-      left: -2px; 
-      width: 26px;
-      height: 26px; 
-   }
-
-   .toggle-btn .check:checked + span:before {
-      transform: translate(32px, -5px);
-   }
-
-   .toggle-btn .check:checked + span:after {
-      transform: translate(43.5px, 0px);
-   }
 }
