@@ -60,6 +60,16 @@
    background: var(--pillpink);
 }
 
+.blog-article {
+   color: red;
+}
+
+.blog-article:hover, 
+   .blog-article:focus {
+      color: var(--pillpink);
+      transition: .3s ease-in-out;
+   }
+
 /* * IPAD * */
 @media only screen and (min-width: 768px) {
    .blog-card {
@@ -75,13 +85,5 @@
       padding: 21.3%;
       background-size: contain;
       background-repeat: no-repeat;
-   }
-
-   .blog-background-1:hover,
-   .blog-background-2:hover,
-   .blog-background-3:hover,
-   .blog-container:focus .blog-background-1 {
-      filter: brightness(25%);
-      transition: .3s ease-in-out;
    }
 }
