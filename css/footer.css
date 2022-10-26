@@ -1,0 +1,12 @@
+footer {
+   text-align: center;
+   padding: 1.250em;
+}
+
+footer > p {
+   padding: 10px;
+   font-family: 'Nasal';
+   font-size: 1em;
+   letter-spacing: 1px;
+   color: Black;
+}
