@@ -78,6 +78,24 @@
          <img class="bio-image" src="images/bio-images/Profile1.png" alt="bio picture 1">
       </div>
 
+      <div class="contact-title-container bio-4">
+         <h1 class="contact-title">CONTACT ME</h1>
+      </div>
+
+      <div class="contact-container bio-5">
+         <form class="contact-form" id="contactForm" method="POST" action="/php/contact-form.php">
+            <label class="contact-label full-name" for="inputname">FULL NAME</label>
+            <input class="contact-input" id="inputName" type="text" name="name" required>
+            <label class="contact-label address" for="inputemail">E-MAIL ADDRESS</label>
+            <input class="contact-input" id="inputEmail" type="email" name="email" required>
+            <label class="contact-label message" for="message">MESSAGE</label>
+            <textarea class="contact-textarea" id="inputMessage" name="message" rows="10" cols="33" required></textarea>
+            <div class="submit-container">
+               <input class="submit-button" id="inputSubmit" type="submit" value="SEND">
+            </div>
+         </form>
+      </div>
+
       <div class="bio-container2 bio-6">
          <img class="bio-image" src="images/bio-images/Profile2.png" alt="bio picture 2">
       </div>
