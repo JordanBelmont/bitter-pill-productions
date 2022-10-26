@@ -1,0 +1,85 @@
+.pixel-display {
+   margin: 30px 40px 30px 40px;
+}
+
+.pixel-card {
+   position: relative;
+   padding: 10px 10px 10px 10px;
+   box-shadow: 0 3px 7px -1px hsl(0, 0%, 20%);
+   color: var(--dark4);
+   font-family: 'Nasal';
+   text-align: center;
+   border-radius: 5px;
+   background-color: var(--light2);
+   width: 19em;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.pixel-container {
+   background-color: var(--light3);
+   border: none;
+}
+
+.pixel-container:focus {
+   outline: none;
+}
+
+.pixel-image {
+   background-color: var(--light4);
+   margin-top: 5px;
+   cursor: pointer;
+}
+
+.pixel-title {
+   display: none;
+}
+
+/* * IPAD * */
+@media only screen and (min-width: 768px) {
+.pixel-container {
+      position: relative;
+      /* allows for the image text to be placed relative to the image itself */
+      margin-bottom: 0;
+   }
+
+   .pixel-container:hover img,
+   .pixel-container:focus img {
+      filter: brightness(25%);
+      /* acts as substitute for an overlay - overlay gets in way of modal */
+      transition: .3s ease-in-out;
+   }
+
+   .pixel-card {
+      padding: 20px 20px 20px 20px;
+      width: 100%;
+      margin: 0;
+   }
+
+   .pixel-image {
+      width: 30em;
+   }
+
+   .pixel-title {
+      z-index: 1;
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      text-align: center;
+      font-family: 'Nasal';
+      font-size: 1.5em;
+      font-weight: bold;
+      letter-spacing: 0.125em;
+      color: var(--pillgreen);
+      opacity: 0;
+      transform: translate(-50%, -50%);
+      /* ensures text starts in the middle of the image */
+      transition: .3s ease-in-out;
+   }
+
+   .pixel-container:hover .pixel-title {
+      opacity: 1;
+      /* ensures the text becomes visible on hover */
+   }
+}
