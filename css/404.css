@@ -1,0 +1,59 @@
+.error-display {
+   margin: 30px 40px 30px 40px;
+   text-align: center;
+}
+
+.error {
+   width: 300px;
+   max-height: 100%;
+   object-fit: cover;
+}
+
+.error-text {
+   text-align: center;
+   margin: 40px;
+   font-family: 'Nasal';
+   font-size: 30px;
+   font-weight: bold;
+   letter-spacing: 2px;
+   color: var(--dark4);
+}
+
+/* * IPAD * */
+@media only screen and (min-width: 768px) {
+   .error {
+      width: 400px;
+      max-height: 100%;
+      object-fit: cover;
+   }
+
+   .error-text {
+      font-size: 25px;
+   }
+}
+
+/* * MACBOOK PRO * */
+@media only screen and (min-width: 1280px) {
+   .error {
+      width: 500px;
+      max-height: 100%;
+      object-fit: cover;
+   }
+
+   .error-text {
+      font-size: 20px;
+   }
+}
+
+/* * IMAC * */
+@media only screen and (min-width: 1537px) and (max-width: 2560px) {
+   .error {
+      width: 600px;
+      max-height: 100%;
+      object-fit: cover;
+   }
+
+   .error-text {
+      font-size: 20px;
+   }
+}
