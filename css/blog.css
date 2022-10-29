@@ -13,6 +13,30 @@
    border-radius: 5px;
 }
 
+.blog-li {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 2.5em;
+   font-family: 'Nasal';
+   font-size: 20px;
+}
+
+.blog-article {
+   display: inline-block;
+   font-family: 'Nasal';
+   font-size: 20px;
+   letter-spacing: 1px;
+   text-decoration: none;
+   color: var(--dark4)
+}
+
+.blog-article:hover, 
+.blog-article:focus {
+      color: var(--pillpink);
+      transition: .3s ease-in-out;
+   }
+
 .blog-background-1, 
 .blog-background-2, 
 .blog-background-3 {
@@ -59,16 +83,6 @@
    margin: 0 10px;
    background: var(--pillpink);
 }
-
-.blog-article {
-   color: red;
-}
-
-.blog-article:hover, 
-   .blog-article:focus {
-      color: var(--pillpink);
-      transition: .3s ease-in-out;
-   }
 
 /* * IPAD * */
 @media only screen and (min-width: 768px) {
