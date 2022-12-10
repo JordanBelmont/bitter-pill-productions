@@ -6,10 +6,10 @@
 .dark-theme .nav-link,
 .dark-theme > footer > p {
    color: var(--light1);
-   /* outline-color: var(--pillpink); */
+   outline-color: var(--pillpink);
 }
 
-/* .dark-theme .pill-link,
+.dark-theme .pill-link,
 .dark-theme .nav-link,
 .dark-theme .art-link,
 .dark-theme .icon-link,
@@ -17,7 +17,7 @@
 .dark-theme .blog-link,
 .dark-theme .bio-link {
    outline-color: var(--pillpink);
-} */
+} 
 
 .dark-theme .line {
    stroke: var(--light2);
