@@ -1,4 +1,4 @@
-// Dark Mode Toggle
+// DARK MODE TOGGLE
 
 let swtch = document.querySelector('.check');
 let logo = document.querySelector('.pill-light');

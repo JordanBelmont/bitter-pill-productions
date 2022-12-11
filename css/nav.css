@@ -72,7 +72,7 @@ nav {
    color: var(--pillpink);
 }
 
-/* BURGER MENU */
+/* BURGER */
 
 .burger-button {
    position: absolute;
@@ -123,7 +123,7 @@ nav {
    stroke-width: 6;
 }
 
-/* DARK MODE TOGGLE */
+/* DARK MODE */
 
 .toggle-btn {
    position: absolute;
