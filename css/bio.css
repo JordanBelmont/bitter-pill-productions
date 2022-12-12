@@ -1,3 +1,5 @@
+/* * IPHONE * */
+
 .bio-display {
    display: flex;
    flex-direction: column;
@@ -153,6 +155,7 @@
 
 /* * IPAD * */
 @media only screen and (min-width: 768px) {
+
    .bio-1 {
       order: 1;
    }
@@ -244,6 +247,7 @@
 
 /* * MACBOOK PRO * */
 @media only screen and (min-width: 1280px) {
+
    .bio-1 {
       order: 0;
    }

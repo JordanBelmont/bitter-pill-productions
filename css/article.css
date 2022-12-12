@@ -1,3 +1,5 @@
+/* * IPHONE * */
+
 .article-display {
    margin: 30px 40px 30px 40px;
 }
@@ -104,6 +106,7 @@
 
 /* * IPAD * */
 @media only screen and (min-width: 768px) {
+
    .article-display {
       margin: 30px 100px 30px 100px;
    }
@@ -116,6 +119,7 @@
 
 /* * MACBOOK PRO * */
 @media only screen and (min-width: 1280px) {
+
    .article-display {
       margin: 30px 300px 30px 300px;
    }
@@ -123,6 +127,7 @@
 
 /* * IMAC * */
 @media only screen and (min-width: 1537px) and (max-width: 2560px) {
+
    .article-display {
       margin: 30px 400px 30px 400px;
    }

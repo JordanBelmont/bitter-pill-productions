@@ -1,5 +1,6 @@
 /* * IPAD * */
 @media only screen and (min-width: 768px) {
+
    .art-display {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -69,6 +70,7 @@
 
 /* * MACBOOK PRO * */
 @media only screen and (min-width: 1280px) {
+
    .art-display {
       grid-template-columns: repeat(6, 1fr);
       grid-column-gap: 3em;
@@ -143,6 +145,7 @@
 
 /* * IMAC * */
 @media only screen and (min-width: 1537px) and (max-width: 2560px) {
+
    .art-display {
       grid-template-columns: repeat(4, 1fr);
       grid-column-gap: 3em;

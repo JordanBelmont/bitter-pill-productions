@@ -1,3 +1,5 @@
+/* * IPHONE * */
+
 .art-display {
    margin: 30px 40px 30px 40px;
 }
@@ -26,6 +28,7 @@
 
 /* * IPAD * */
 @media only screen and (min-width: 768px) {
+
    .art-container {
       position: relative;
       /* allows for the image text to be placed relative to the image itself */
@@ -129,6 +132,7 @@
 
 /* * MACBOOK PRO * */
 @media only screen and (min-width: 1280px) {
+
    .art-container {
       margin-bottom: 0;
       order: 0;
@@ -137,6 +141,7 @@
 
 /* * IMAC */
 @media only screen and (min-width: 1537px) and (max-width: 2560px) {
+
    .art-1 {
       order: 1;
    }

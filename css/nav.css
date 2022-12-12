@@ -1,3 +1,5 @@
+/* * IPHONE * */
+
 header {
    z-index: 2;
    position: sticky;
@@ -206,6 +208,7 @@ nav {
 
 /* * IPAD * */
 @media only screen and (min-width: 768px) {
+
    nav {
       display: inline;
    }
