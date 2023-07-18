@@ -20,7 +20,8 @@
 .code-background-2,
 .code-background-3,
 .code-background-4,
-.code-background-5 {
+.code-background-5,
+.code-background-6 {
    display: flex;
    flex-direction: column;
    justify-content: space-around;
@@ -48,6 +49,10 @@
 
 .code-background-5 {
    background-image: url("../images/code-images/Code-5.jpg")
+}
+
+.code-background-6 {
+   background-image: url("../images/code-images/Code-6.jpg")
 }
 
 .code-title {
@@ -99,7 +104,8 @@
    .code-background-2,
    .code-background-3,
    .code-background-4,
-   .code-background-5 {
+   .code-background-5,
+   .code-background-6 {
       display: flex;
       flex-direction: column;
       justify-content: space-around;
@@ -113,6 +119,7 @@
    .code-background-3:hover,
    .code-background-4:hover,
    .code-background-5:hover,
+   .code-background-6:hover,
    .code-container:focus .code-background-1 {
       filter: brightness(25%);
       transition: .3s ease-in-out;
@@ -131,7 +138,8 @@
    .code-background-2,
    .code-background-3,
    .code-background-4,
-   .code-background-5 {
+   .code-background-5,
+   .code-background-6 {
       background-size: contain;
       background-position: center;
       background-repeat: no-repeat;
