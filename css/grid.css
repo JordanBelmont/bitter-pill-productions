@@ -62,7 +62,10 @@
    .code-1,
    .code-2,
    .code-3,
-   .code-4 {
+   .code-4,
+   .code-5,
+   .code-6,
+   .code-7 {
       grid-column: span 2;
       grid-row: span 1;
    }
@@ -125,23 +128,26 @@
    }
 }
 
-   .blog-1,
-   .blog-2,
-   .blog-3,
-   .code-1,
-   .code-2,
-   .code-3,
-   .code-4,
-   .pixel-1 {
-      grid-column: span 1;
-      grid-row: span 1;
-   }
+.blog-1,
+.blog-2,
+.blog-3,
+.code-1,
+.code-2,
+.code-3,
+.code-4,
+.code-5,
+.code-6,
+.code-7,
+.pixel-1 {
+   grid-column: span 1;
+   grid-row: span 1;
+}
 
-   .bio-3,
-   .bio-6 {
-      grid-column: span 1;
-      grid-row: span 2;
-   }
+.bio-3,
+.bio-6 {
+   grid-column: span 1;
+   grid-row: span 2;
+}
 
 /* * IMAC * */
 @media only screen and (min-width: 1537px) and (max-width: 2560px) {
@@ -191,6 +197,9 @@
    .code-2,
    .code-3,
    .code-4,
+   .code-5,
+   .code-6,
+   .code-7,
    .pixel-1 {
       grid-column: span 1;
       grid-row: span 1;
