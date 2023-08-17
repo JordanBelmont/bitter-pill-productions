@@ -1,13 +1,13 @@
 /* * IPHONE * */
 
 .hero-container {
-      margin: 30px 40px 30px 40px;
-      text-align: center;
-   }
+   margin: 30px 0px 0px 0px;
+   text-align: center;
+}
 
 .hero {
-display: none;
-   }
+   display: none;
+}
 
 .hero2 {
    width: 100%;
@@ -19,7 +19,7 @@ display: none;
 
    .hero {
       display: inline;
-      width: 100%;
+      width: 75vw;
       border: 5px solid black;
    }
 
