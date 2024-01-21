@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+   <meta charset="utf-8">
+   <meta name="websitedescription"
+         content="test">
+   <meta http-equiv="imagetoolbar"
+         content="no">
+   <meta http-equiv="x-ua-compatible"
+         content="ie=edge">
+   <meta name="viewport"
+         content="width=device-width, initial-scale=1">
+
+   <link rel="shortcut icon"
+         href="icons/favicon/favicon.ico"
+         type="image/x-icon">
+   <link rel="apple-touch-icon"
+         href="icons/favicon/apple-touch-icon.png">
+   <link rel="apple-touch-icon"
+         sizes="57x57"
+         href="icons/favicon/apple-touch-icon-57x57.png">
+   <link rel="apple-touch-icon"
+         sizes="72x72"
+         href="icons/favicon/apple-touch-icon-72x72.png">
+   <link rel="apple-touch-icon"
+         sizes="76x76"
+         href="icons/favicon/apple-touch-icon-76x76.png">
+   <link rel="apple-touch-icon"
+         sizes="114x114"
+         href="icons/favicon/apple-touch-icon-114x114.png">
+   <link rel="apple-touch-icon"
+         sizes="120x120"
+         href="icons/favicon/apple-touch-icon-120x120.png">
+   <link rel="apple-touch-icon"
+         sizes="144x144"
+         href="icons/favicon/apple-touch-icon-144x144.png">
+   <link rel="apple-touch-icon"
+         sizes="152x152"
+         href="icons/favicon/apple-touch-icon-152x152.png">
+   <link rel="apple-touch-icon"
+         sizes="180x180"
+         href="icons/favicon/apple-touch-icon-180x180.png">
+
+   <link rel="stylesheet"
+         href="css/style.css">
+   <script defer
+           src="javascript/burger.js"></script>
+   <script defer
+           src="javascript/darkMode.js"></script>
+
+   <title>Bitter Pill Productions: Blog 8</title>
+</head>
+
+<body>
+   <header>
+      <a href="./index.html"
+         class="pill-link">
+         <img class="pill-light"
+              src="icons/logo/bitterpill-light.png"
+              alt="bitter pill logo">
+      </a>
+      <div class="toggle-btn">
+         <input class="check"
+                type="checkbox">
+         <span></span>
+      </div>
+      <nav id=navBurger>
+         <ul class="nav-ul">
+            <li><a class="nav-link"
+                  href="./art.html">ART</a></li>
+            <li><a class="nav-link"
+                  href="./code.html">CODE</a></li>
+            <li><a class="nav-link"
+                  href="./pixel.html">PIXEL</a></li>
+            <li><a class="blog-link"
+                  href="./blog.html">BLOG</a></li>
+            <li><a class="nav-link"
+                  href="./bio.html">BIO</a></li>
+         </ul>
+      </nav>
+      <button class="burger-button"
+              id='burgerButton'>
+         <svg viewBox="0 0 100 80"
+              width="40"
+              height="40">
+            <path class="line line1"
+                  d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+            <path class="line line2"
+                  d="M 20,50 H 80" />
+            <path class="line line3"
+                  d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+         </svg>
+      </button>
+   </header>
+
+   <div class="article-display">
+      <div class="article-card">
+         <h1 class="article-title">D-Pad</h1>
+         <figure class="article-figure">
+            <img class="article-image"
+                 src="images/article-images/article.jpg"
+                 alt="D-Pad Concept Image">
+         </figure>
+         <h2 class="article-header">The Concept</h2>
+         <p class="article-text">
+            Ask-Sothoth is the culmination of two of my favourite things: Unspeakable Eldritch horrors that lurk on the
+            fringes of human imagination, and the complete removal of culpability. I wanted to create an app that had
+            simple interaction mechanics, could be visually interesting, and included a sense of randomness. I thought
+            about a magic 8-ball and how you can ask it a question and it gives you one of a set of answers. It covered
+            everything - simple interaction in the form of asking and shaking, gives a random answer each time, and it's
+            got the visual aspect to it.
+         </p>
+         <p class="article-text">
+            I knew that, at a minimum, the app had to have an input bar for any users to type in their questions, had to
+            have a button to generate an answer for the users' question, and had to generate the answers themselves.
+            Knowing the necessary mechanics of the app gave me insight into the languages that would make sense to use -
+            The input bar and button could be created in HTML, the answers could be generated using vanilla JavaScript,
+            and the designs could be covered with some CSS wizardry.
+         </p>
+         <h2 class="article-header">The Design</h2>
+         <p class="article-text">
+            When it came to the design, I didn't just want to create the typical black sphere with a hole that generated
+            answers. I wanted something eye catching, and while I knew buttons can be more flexible with creativity, I
+            knew that there was no getting around having to include the standard horizontal input bar. So I dipped into
+            my influences and experiences to try and give it a unique artistic twist, while at the same time taking
+            functionality and accessibility into account.
+         </p>
+         <p class="article-text">
+            The idea of a godlike being answering mundane questions gave the overall concept some charm and flair, so I
+            chose to use one of H.P.Lovecraft's creations, Yog-Sothoth as a stand in for the ball. The Ask Jeeves idea
+            came from wanting to parody old search engines, it also helped pave the way for the layout, giving me the
+            idea to make something resembling the old logo, with the butler, Jeeves next to the input bar. The naming of
+            the app felt like a no-brainer - Ask-Sothoth: an amalgamation of Yog-Sothoth and Ask Jeeves.
+         </p>
+         <h2 class="article-header">The Challenges</h2>
+         <p class="article-text">
+            I knew that it would make sense to use CSS Grid for the layout, and despite the simplicity of the layout, I
+            was initially reluctant to use it as I wasn't particularly competent at utilising it. Thankfully, I gave it
+            a go, and after some serious toying with the code, I got to understanding it a lot better. Once I got to
+            grips with it, it was only a matter of finding the smoothest way to transition the layout from horizontal to
+            vertical using media queries to accommodate the main 3 screen types (desktop, iPad, and mobile repectively).
+         </p>
+         <p class="article-text">
+            The next major port-of-call was to implement JavaScript to generate the answers. I wrote down all the
+            possible answers, compiled them into an array and had them generate on-screen through an event listener (the
+            button). To add more nuance, I made the event listener into an if/else statement so users would have to ask
+            something, have to end their question with a "?", and questions asked twice would be stored in order to
+            produce the same answer. The font I used for the input bar had no numbers, so I added a RegEx function to
+            disable numerical values, and finally, I created another array filled with sound files that would emulate a
+            voice for Ask-Sothoth on answering a question.
+         </p>
+         <h2 class="article-header">The Outcome</h2>
+         <p class="article-text">
+            Overall I'm OK with the way the whole thing turned out. Sure, it could look a bit more visually impressive,
+            and as my confidence builds with CSS I'll likely revisit this app and tweak it. One thing I'd like to do is
+            animate Ask-Sothoth by making it a .gif file instead of a static .jpeg image. But in terms of what I was
+            aiming to create - a simple app with easy functionality that's visually interesting and is responsive over
+            different platforms, this was a success.
+         </p>
+         <div class="back-container">
+            <a class="back"
+               href="./blog.html#blogCard2">Back</a>
+         </div>
+      </div>
+   </div>
+
+   <footer>
+      <p>For all your creative aches and pains</p>
+      <div class="foot-container">
+         <a href="https://twitter.com/BitterPillProd2"
+            target="_blank"
+            class="foot-link">
+            <img class="foot-icon"
+                 src="icons/footer/twitter.svg"
+                 alt="twitter icon"
+                 title="Twitter">
+         </a>
+         <a href="https://www.instagram.com/bitterpillproductions"
+            target="_blank"
+            class="foot-link">
+            <img class="foot-icon"
+                 src="icons/footer/instagram.svg"
+                 alt="instagram icon"
+                 title="Instagram">
+         </a>
+         <a href="https://github.com/JordanBelmont"
+            target="_blank"
+            class="foot-link">
+            <img class="foot-icon"
+                 src="icons/footer/github.svg"
+                 alt="github icon"
+                 title="Github">
+         </a>
+      </div>
+      <p>&copy;2020 - Bitter Pill Productions</p>
+   </footer>
+</body>
+
+</html>
