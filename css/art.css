@@ -1,12 +1,12 @@
 /* * IPHONE * */
 
 .art-display {
-   margin: 30px 40px 30px 40px;
+   margin: 1.8rem 2.5rem;
 }
 
 .art-container {
    display: block;
-   margin-bottom: 1.250em;
+   margin-bottom: 1.25rem;
    background: none;
    border: none;
    padding: 0;
@@ -50,9 +50,9 @@
       left: 50%;
       text-align: center;
       font-family: 'Nasal';
-      font-size: 1.5em;
+      font-size: 1.5rem;
       font-weight: bold;
-      letter-spacing: 0.125em;
+      letter-spacing: 0.125rem;
       color: var(--pillgreen);
       opacity: 0;
       transform: translate(-50%, -50%);

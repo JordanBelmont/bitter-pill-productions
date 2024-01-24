@@ -1,12 +1,12 @@
 /* * IPHONE * */
 
 .article-display {
-   margin: 1.8rem 2.5rem 1.8rem 2.5rem;
+   margin: 1.8rem 2.5rem;
 }
 
 .article-card {
    padding: 1.25rem;
-   box-shadow: 0 3px 7px -1px hsl(0, 0%, 20%);
+   box-shadow: 0 0.1rem 0.4rem -0.06rem hsl(0, 0%, 20%);
    color: var(--dark4);
    background-color: var(--light2);
 }
@@ -46,8 +46,8 @@
    pointer-events: none;
 }
 
-.article-text,
-.article-intro {
+.article-intro,
+.article-text {
    margin-top: 1.3rem;
    font-family: 'Nasal';
    font-size: 1.3rem;
@@ -104,19 +104,15 @@
    }
 
    .article-card {
-      padding: 40px 20px 20px 20px;
+      padding: 2.5rem 1.25rem 1.25rem 1.25rem;
    }
 
-   .article-intro {
-      margin: 1.5rem 1rem;
-   }
-
+   .article-intro,
    .article-text {
       margin: 1.5rem 1rem;
    }
 
    .article-image {
-      margin-top: 2rem;
       width: 97%;
    }
 }

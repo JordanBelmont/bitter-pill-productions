@@ -1,18 +1,18 @@
 /* * IPHONE * */
 
 .blog-display {
-   margin: 30px 40px 30px 40px;
+   margin: 1.8rem 2.5rem;
 }
 
 .blog-card {
    position: relative;
-   padding: 20px 20px 20px 20px;
-   margin-bottom: 1.250em;
-   box-shadow: 0 3px 7px -1px hsl(0, 0%, 20%);
+   padding: 1.25rem;
+   margin-bottom: 1.25rem;
+   box-shadow: 0 0.1rem 0.4rem -0.06rem hsl(0, 0%, 20%);
    color: var(--dark4);
    font-family: 'Nasal';
    background-color: var(--light2);
-   border-radius: 5px;
+   border-radius: 0.5rem;
 }
 
 .blog-li {
@@ -20,28 +20,28 @@
    align-items: center;
    justify-content: center;
    text-align: center;
-   height: 2.5em;
+   height: 2.5rem;
    font-family: 'Nasal';
-   font-size: 20px;
+   font-size: 1.25rem;
 }
 
 .blog-article {
    display: inline-block;
    font-family: 'Nasal';
-   font-size: 20px;
-   letter-spacing: 1px;
+   font-size: 1.25rem;
+   letter-spacing: 0.06rem;
    text-decoration: none;
    color: var(--dark4)
 }
 
-.blog-article:hover, 
+.blog-article:hover,
 .blog-article:focus {
-      color: var(--pillpink);
-      transition: .3s ease-in-out;
-   }
+   color: var(--pillpink);
+   transition: .3s ease-in-out;
+}
 
-.blog-background-1, 
-.blog-background-2, 
+.blog-background-1,
+.blog-background-2,
 .blog-background-3 {
    display: flex;
    flex-direction: column;
@@ -69,21 +69,21 @@
    justify-content: center;
    align-items: center;
    text-align: center;
-   margin: 15px 0px 15px 0px;
-   font-size: 24px;
+   margin: 0.9rem 0;
+   font-size: 1.5rem;
    font-weight: bold;
-   letter-spacing: 2px;
-   line-height: 25px;
+   letter-spacing: 0.1rem;
+   line-height: 1.5rem;
    text-transform: uppercase;
    pointer-events: none;
 }
 
-.blog-title:after, 
+.blog-title:after,
 .blog-title:before {
    content: '';
-   width: 100px;
-   height: 2px;
-   margin: 0 10px;
+   width: 6.2rem;
+   height: 0.1rem;
+   margin: 0 0.6rem;
    background: var(--pillpink);
 }
 
@@ -91,11 +91,11 @@
 @media only screen and (min-width: 768px) {
 
    .blog-card {
-      margin-bottom: 0em;
+      margin-bottom: 0;
    }
 
-   .blog-background-1, 
-   .blog-background-2, 
+   .blog-background-1,
+   .blog-background-2,
    .blog-background-3 {
       display: flex;
       flex-direction: column;

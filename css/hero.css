@@ -1,7 +1,7 @@
 /* * IPHONE * */
 
 .hero-container {
-   margin: 30px 0px 0px 0px;
+   margin: 1.8rem 0 0 0;
    text-align: center;
 }
 
@@ -11,7 +11,7 @@
 
 .hero2 {
    width: 100%;
-   border: 5px solid black;
+   border: 0.3rem solid black;
 }
 
 /* * IPAD * */
@@ -19,11 +19,18 @@
 
    .hero {
       display: inline;
-      width: 75vw;
-      border: 5px solid black;
+      width: 90vw;
+      border: 0.3rem solid black;
    }
 
    .hero2 {
       display: none;
+   }
+}
+
+/* * IMAC * */
+@media only screen and (min-width: 1537px) and (max-width: 2560px) {
+   .hero {
+      width: 75vw;
    }
 }

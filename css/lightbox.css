@@ -1,3 +1,5 @@
+/* * IPHONE * */
+
 #lightbox {
    z-index: 3;
    display: none;
@@ -18,7 +20,14 @@
 #lightbox img {
    max-width: 95%;
    max-height: 95%;
-   padding: 4px;
-   border: 2px solid white;
+   padding: 0.25rem;
+   border: 0.12rem solid white;
    background-color: black;
+}
+
+/* * IPAD * */
+@media only screen and (min-width: 768px) {
+   #lightbox img {
+      width: 50rem;
+   }
 }

@@ -4,29 +4,29 @@
    .art-display {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      grid-column-gap: 3em;
-      grid-row-gap: 3em;
+      grid-column-gap: 3rem;
+      grid-row-gap: 3rem;
    }
 
    .blog-display,
    .code-display {
       display: grid;
       grid-template-columns: 1fr;
-      grid-column-gap: 3em;
-      grid-row-gap: 3em;
+      grid-column-gap: 3rem;
+      grid-row-gap: 3rem;
    }
 
    .pixel-display {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      grid-column-gap: 3em;
-      grid-row-gap: 3em;
+      grid-column-gap: 3rem;
+      grid-row-gap: 3rem;
    }
 
    .bio-display {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      grid-column-gap: 50px;
+      grid-column-gap: 3rem;
    }
 
    .art-1,
@@ -76,27 +76,27 @@
 
    .art-display {
       grid-template-columns: repeat(6, 1fr);
-      grid-column-gap: 3em;
-      grid-row-gap: 3em;
+      grid-column-gap: 3rem;
+      grid-row-gap: 3rem;
    }
 
    .blog-display,
    .code-display {
       grid-template-columns: repeat(2, 1fr);
-      grid-column-gap: 3em;
-      grid-row-gap: 5em;
+      grid-column-gap: 3rem;
+      grid-row-gap: 5rem;
    }
 
    .pixel-display {
       grid-template-columns: repeat(3, 1fr);
-      grid-column-gap: 3em;
-      grid-row-gap: 3em;
+      grid-column-gap: 3rem;
+      grid-row-gap: 3rem;
    }
 
    .bio-display {
       grid-template-columns: repeat(3, 1fr);
-      grid-column-gap: 3em;
-      grid-row-gap: 3em;
+      grid-column-gap: 3rem;
+      grid-row-gap: 3rem;
    }
 
    .art-1,
@@ -154,28 +154,28 @@
 
    .art-display {
       grid-template-columns: repeat(4, 1fr);
-      grid-column-gap: 3em;
-      grid-row-gap: 3em;
+      grid-column-gap: 3rem;
+      grid-row-gap: 3rem;
    }
 
    .blog-display,
    .code-display {
       grid-template-columns: repeat(3, 1fr);
-      grid-column-gap: 3em;
-      grid-row-gap: 6em;
+      grid-column-gap: 3rem;
+      grid-row-gap: 6rem;
    }
 
    .pixel-display {
       grid-template-columns: repeat(5, 1fr);
-      grid-column-gap: 3em;
-      grid-row-gap: 3em;
+      grid-column-gap: 3rem;
+      grid-row-gap: 3rem;
    }
 
    .bio-display {
       grid-template-columns: repeat(3, 1fr);
-      grid-column-gap: 3em;
-      grid-row-gap: 3em;
-      margin: 30px 350px 30px 350px;
+      grid-column-gap: 3rem;
+      grid-row-gap: 3rem;
+      margin: 1.8rem 21rem 1.8rem 21rem;
    }
 
    .art-1,

@@ -3,31 +3,31 @@
 .bio-display {
    display: flex;
    flex-direction: column;
-   margin: 30px 60px 30px 60px;
+   margin: 1.8rem 3.7rem;
 }
 
-.profile-title-container, 
+.profile-title-container,
 .contact-title-container {
    display: flex;
    align-items: center;
    justify-content: center;
    text-align: center;
-   margin-bottom: 40px;
+   margin-bottom: 2.5rem;
    font-family: 'Nasal';
-   font-size: 24px;
+   font-size: 1.5rem;
    font-weight: bold;
-   letter-spacing: 2px;
+   letter-spacing: 0.1rem;
    color: var(--dark4);
 }
 
-.profile-title-container:after, 
-.profile-title-container:before, 
-.contact-title-container:after, 
+.profile-title-container:after,
+.profile-title-container:before,
+.contact-title-container:after,
 .contact-title-container:before {
    content: '';
-   width: 150px;
-   height: 2px;
-   margin: 0 10px;
+   width: 9.3rem;
+   height: 0.1rem;
+   margin: 0 0.6rem;
    background: var(--pillpink);
 }
 
@@ -56,24 +56,24 @@
 }
 
 .contact-title-container {
-   margin-top: 40px;
+   margin-top: 2.5rem;
 }
 
-.profile-container, 
+.profile-container,
 .contact-container {
    font-family: 'Nasal';
-   font-size: 20px;
-   letter-spacing: 1px;
-   line-height: 24px;
+   font-size: 1.25rem;
+   letter-spacing: 0.06rem;
+   line-height: 1.5rem;
    color: var(--dark4);
 }
 
 .profile-heading {
    font-weight: bold;
-   letter-spacing: 2px;
+   letter-spacing: 0.1rem;
 }
 
-.profile-heading, 
+.profile-heading,
 .profile-stats {
    display: block;
 }
@@ -83,46 +83,46 @@
    font-weight: bold;
 }
 
-.address, 
+.address,
 .message {
-   margin-top: 20px;
+   margin-top: 1.25rem;
 }
 
-.contact-input, 
+.contact-input,
 .contact-textarea {
    display: block;
    width: 100%;
    padding: 1%;
-   margin-top: 20px;
-   border: 2px solid var(--light4);
-   border-radius: 5px;
+   margin-top: 1.25rem;
+   border: 0.1rem solid var(--light4);
+   border-radius: 0.3rem;
    background-color: var(--light1);
    font-family: monospace;
-   font-size: 20px;
-   letter-spacing: 1px;
+   font-size: 1.25rem;
+   letter-spacing: 0.06rem;
    resize: none;
 }
 
-.contact-input:focus, 
+.contact-input:focus,
 .contact-textarea:focus {
-   border: 2px solid black;
-   border-radius: 5px;
+   border: 0.1rem solid black;
+   border-radius: 0.3rem;
    outline: none;
 }
 
 .submit-container {
    text-align: center;
-   margin-top: 20px;
+   margin-top: 1.25rem;
 }
 
 .submit-button {
-   padding: 10px;
-   border: 2px solid var(--light4);
-   border-radius: 5px;
+   padding: 0.6rem;
+   border: 0.1rem solid var(--light4);
+   border-radius: 0.3rem;
    font-family: 'Nasal';
-   font-size: 18px;
+   font-size: 1.1rem;
    font-weight: bold;
-   letter-spacing: 2px;
+   letter-spacing: 0.1rem;
    color: var(--dark4);
    background: none;
 }
@@ -132,15 +132,15 @@
 }
 
 .submit-button:focus {
-   border: 2px solid black;
-   border-radius: 5px;
+   border: 0.1rem solid black;
+   border-radius: 0.3rem;
    outline: none;
    color: black;
 }
 
 .bio-container1 {
    text-align: center;
-   margin-bottom: 20px;
+   margin-bottom: 1.25rem;
 }
 
 .bio-container2 {
@@ -181,57 +181,57 @@
    }
 
    .profile-title-container {
-      margin-bottom: 30px;
+      margin-bottom: 1.8rem;
    }
 
    .contact-title-container {
-      margin-top: 0px;
-      margin-bottom: 30px;
+      margin-top: 0;
+      margin-bottom: 1.8rem;
    }
 
    .profile-container,
    .contact-container {
       display: block;
       text-align: justify;
-      margin: 10px;
+      margin: 0.6rem;
       font-family: 'Nasal';
-      font-size: 20px;
-      letter-spacing: 1px;
+      font-size: 1.25rem;
+      letter-spacing: 0.06rem;
       color: var(--dark4);
    }
 
    .contact-label {
       display: block;
-      margin-top: 20px;
+      margin-top: 1.25rem;
       font-weight: bold;
-      letter-spacing: 2px;
+      letter-spacing: 0.1rem;
    }
 
-   .profile-heading, 
+   .profile-heading,
    .profile-stats {
       display: inline;
    }
 
    .profile-heading {
-      letter-spacing: 2px;
+      letter-spacing: 0.1rem;
    }
 
    .profile-stats {
-      padding-left: 20px;
+      padding-left: 1.25rem;
    }
 
    .full-name {
-      margin-top: 0px;
+      margin-top: 0;
    }
 
    .submit-container {
       display: block;
-      margin-top: 0px
+      margin-top: 0;
    }
 
    .submit-button {
       width: 20%;
-      margin-top: 18px
+      margin-top: 1.1rem
    }
 
    .bio-container2 {
@@ -240,7 +240,7 @@
    }
 
    .profile-text {
-      margin-bottom: 50px;
+      margin-bottom: 3rem;
       float: right;
    }
 }
@@ -276,7 +276,7 @@
       margin-bottom: 0;
 
    }
-   
+
    .contact-title-container {
       margin-bottom: 0;
    }
@@ -291,6 +291,6 @@
    }
 
    .bio-image {
-      width: 570px;
+      width: 35rem;
    }
 }

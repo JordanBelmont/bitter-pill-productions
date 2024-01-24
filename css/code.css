@@ -1,18 +1,18 @@
 /* * IPHONE * */
 
 .code-display {
-   margin: 30px 40px 30px 40px;
+   margin: 1.8rem 2.5rem;
 }
 
 .code-card {
    position: relative;
-   padding: 20px 20px 20px 20px;
-   margin-bottom: 1.250em;
-   box-shadow: 0 3px 7px -1px hsl(0, 0%, 20%);
+   padding: 1.25rem;
+   margin-bottom: 1.25rem;
+   box-shadow: 0 0.1rem 0.4rem -0.06rem hsl(0, 0%, 20%);
    color: var(--dark4);
    font-family: 'Nasal';
    text-align: center;
-   border-radius: 5px;
+   border-radius: 0.3rem;
    background-color: var(--light2);
 }
 
@@ -65,37 +65,37 @@
    justify-content: center;
    align-items: center;
    text-align: center;
-   margin-top: 15px;
+   margin-top: 0.9rem;
    font-family: 'Nasal';
-   font-size: 24px;
+   font-size: 1.5rem;
    font-weight: bold;
-   letter-spacing: 2px;
-   line-height: 25px;
+   letter-spacing: 0.1rem;
+   line-height: 1.5rem;
    text-transform: uppercase;
 }
 
 .code-title:after,
 .code-title:before {
    content: '';
-   width: 100px;
-   height: 2px;
-   margin: 0 10px;
+   width: 6.2rem;
+   height: 0.1rem;
+   margin: 0 0.6rem;
    background: var(--pillpink);
 }
 
 .code-heading {
-   margin-top: 15px;
+   margin-top: 0.9rem;
    font-family: 'Nasal';
-   font-size: 20px;
+   font-size: 1.25rem;
    font-weight: bold;
-   letter-spacing: 2px;
+   letter-spacing: 0.1rem;
    text-transform: uppercase;
 }
 
 .code-stats {
-   margin-top: 10px;
-   font-size: 20px;
-   letter-spacing: 1px;
+   margin-top: 0.6rem;
+   font-size: 1.25rem;
+   letter-spacing: 0.06rem;
 }
 
 .code-image {

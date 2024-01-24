@@ -2,13 +2,13 @@
 
 footer {
    text-align: center;
-   padding: 1.250em;
+   padding: 1.250rem;
 }
 
-footer > p {
-   padding: 10px;
+footer>p {
+   padding: 0.6rem;
    font-family: 'Nasal';
-   font-size: 1em;
-   letter-spacing: 1px;
+   font-size: 1rem;
+   letter-spacing: 0.06rem;
    color: Black;
 }
