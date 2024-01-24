@@ -9,6 +9,7 @@
    box-shadow: 0 0.1rem 0.4rem -0.06rem hsl(0, 0%, 20%);
    color: var(--dark4);
    background-color: var(--light2);
+   border-radius: 0.5rem;
 }
 
 .article-title {
