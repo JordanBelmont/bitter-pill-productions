@@ -1,11 +1,11 @@
 /* * IPHONE * */
 
 .article-display {
-   margin: 30px 40px 30px 40px;
+   margin: 1.8rem 2.5rem 1.8rem 2.5rem;
 }
 
 .article-card {
-   padding: 20px 20px 20px 20px;
+   padding: 1.25rem;
    box-shadow: 0 3px 7px -1px hsl(0, 0%, 20%);
    color: var(--dark4);
    background-color: var(--light2);
@@ -16,11 +16,11 @@
    justify-content: center;
    align-items: center;
    text-align: center;
-   margin: 15px 0px 30px 0px;
+   margin: 0.9rem 0px 1.8rem 0px;
    font-family: 'Nasal';
-   font-size: 30px;
+   font-size: 1.8rem;
    font-weight: bold;
-   letter-spacing: 2px;
+   letter-spacing: 0.1rem;
    text-transform: uppercase;
    pointer-events: none;
 }
@@ -28,59 +28,51 @@
 .article-title:after,
 .article-title:before {
    content: '';
-   width: 100px;
-   height: 2px;
-   margin: 0 10px;
+   width: 6.2rem;
+   height: 0.1rem;
+   margin: 0 0.6rem;
    background: var(--pillpink);
 }
 
 .article-header {
-   margin-top: 40px;
+   margin-top: 2.5rem;
    text-align: center;
    font-family: 'Nasal';
    font-weight: bold;
-   font-size: 24px;
-   letter-spacing: 2px;
-   line-height: 20px;
+   font-size: 1.5rem;
+   letter-spacing: 0.2rem;
+   line-height: 1.3rem;
    text-transform: uppercase;
    pointer-events: none;
 }
 
+.article-text,
 .article-intro {
-   margin-top: 20px;
+   margin-top: 1.3rem;
    font-family: 'Nasal';
-   font-size: 20px;
-   letter-spacing: 2px;
-   line-height: 30px;
-   pointer-events: none;
-}
-
-.article-text {
-   margin-top: 20px;
-   font-family: 'Nasal';
-   font-size: 20px;
-   letter-spacing: 1px;
-   line-height: 30px;
+   font-size: 1.3rem;
+   letter-spacing: 0.1rem;
+   line-height: 1.8rem;
    pointer-events: none;
 }
 
 .article-image {
-   margin-top: 30px;
+   margin-top: 1.8rem;
    width: 100%;
 }
 
 .back-container {
    text-align: right;
-   margin-top: 15px;
+   margin-top: 0.9rem;
 }
 
 .back {
-   margin-top: 15px;
+   margin-top: 0.9rem;
    font-family: 'Nasal';
-   font-size: 18px;
+   font-size: 1.1rem;
    font-weight: bold;
    text-decoration: none;
-   letter-spacing: 2px;
+   letter-spacing: 0.1rem;
    color: var(--dark4);
    outline-color: var(--pillpink);
 }
@@ -96,11 +88,11 @@
 }
 
 .article-figcaption {
-   margin-top: 5px;
+   margin-top: 0.3rem;
    font-family: 'Nasal';
-   font-size: 14px;
-   letter-spacing: 1px;
-   line-height: 20px;
+   font-size: 1rem;
+   letter-spacing: 0.08rem;
+   line-height: 1.3rem;
    pointer-events: none;
 }
 
@@ -108,12 +100,24 @@
 @media only screen and (min-width: 768px) {
 
    .article-display {
-      margin: 30px 100px 30px 100px;
+      margin: 1.8rem 10%;
    }
 
    .article-card {
-      width: 100%;
       padding: 40px 20px 20px 20px;
+   }
+
+   .article-intro {
+      margin: 1.5rem 1rem;
+   }
+
+   .article-text {
+      margin: 1.5rem 1rem;
+   }
+
+   .article-image {
+      margin-top: 2rem;
+      width: 97%;
    }
 }
 
@@ -121,7 +125,7 @@
 @media only screen and (min-width: 1280px) {
 
    .article-display {
-      margin: 30px 300px 30px 300px;
+      margin: 1.8rem 15%;
    }
 }
 
@@ -129,19 +133,6 @@
 @media only screen and (min-width: 1537px) and (max-width: 2560px) {
 
    .article-display {
-      margin: 30px 600px 30px 600px;
-   }
-
-   .article-intro {
-      margin: 20px 40px 0;
-   }
-
-   .article-text {
-      margin: 20px 40px 0;
-   }
-
-   .article-image {
-      margin-top: 30px;
-      width: 95%;
+      margin: 1.8rem 25%;
    }
 }
