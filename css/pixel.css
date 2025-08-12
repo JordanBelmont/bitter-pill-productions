@@ -41,15 +41,15 @@
 @media only screen and (min-width: 768px) {
 
    .pixel-container {
-      position: relative;
       /* allows for the image text to be placed relative to the image itself */
+      position: relative;
       margin-bottom: 0;
    }
 
    .pixel-container:hover img,
    .pixel-container:focus img {
-      filter: brightness(25%);
       /* acts as substitute for an overlay - overlay gets in way of modal */
+      filter: brightness(25%);
       transition: .3s ease-in-out;
    }
 
@@ -76,13 +76,13 @@
       letter-spacing: 0.125em;
       color: var(--pillgreen);
       opacity: 0;
-      transform: translate(-50%, -50%);
       /* ensures text starts in the middle of the image */
+      transform: translate(-50%, -50%);
       transition: .3s ease-in-out;
    }
 
    .pixel-container:hover .pixel-title {
-      opacity: 1;
       /* ensures the text becomes visible on hover */
+      opacity: 1;
    }
 }
