@@ -31,7 +31,7 @@
 
    .art-container {
       position: relative;
-      /* allows for the image text to be placed relative to the image itself */
+      /* Allows absolute positioning of title over image */
       margin-bottom: 0;
    }
 
@@ -43,11 +43,13 @@
    }
 
    .art-title {
-      z-index: 1;
       display: block;
       position: absolute;
       top: 50%;
       left: 50%;
+      z-index: 1;
+      transform: translate(-50%, -50%);
+      /* ensures text starts in the middle of the image */
       text-align: center;
       font-family: 'Nasal';
       font-size: 1.5rem;
@@ -55,8 +57,6 @@
       letter-spacing: 0.125rem;
       color: var(--pillgreen);
       opacity: 0;
-      transform: translate(-50%, -50%);
-      /* ensures text starts in the middle of the image */
       transition: .3s ease-in-out;
    }
 
@@ -66,11 +66,11 @@
    }
 
    .art-1 {
-      order: 1;
+      order: 0;
    }
 
    .art-2 {
-      order: 2;
+      order: 1;
    }
 
    .art-3 {
@@ -78,43 +78,59 @@
    }
 
    .art-4 {
-      order: 5;
-   }
-
-   .art-5 {
-      order: 10;
-   }
-
-   .art-6 {
       order: 4;
    }
 
-   .art-7 {
-      order: 9;
+   .art-5 {
+      order: 2;
    }
 
-   .art-8 {
-      order: 16;
-   }
-
-   .art-13 {
+   .art-6 {
       order: 6;
    }
 
-   .art-14 {
-      order: 8;
-   }
-
-   .art-15 {
+   .art-7 {
       order: 7;
    }
 
-   .art-16 {
+   .art-8 {
+      order: 8;
+   }
+
+   .art-9 {
+      order: 9;
+   }
+
+   .art-10 {
+      order: 10;
+   }
+
+   .art-11 {
+      order: 8;
+   }
+
+   .art-12 {
+      order: 11;
+   }
+
+   .art-13 {
+      order: 12;
+   }
+
+   .art-14 {
+      order: 13;
+   }
+
+   .art-15 {
       order: 15;
    }
 
+   .art-16 {
+      order: 16;
+   }
+
    .art-17 {
-      order: 20;
+      order: 14;
    }
 
    .art-18 {
@@ -127,31 +143,90 @@
 
    .art-20 {
       order: 19;
+   }
+
+   .art-21 {
+      order: 21;
+   }
+
+   .art-22 {
+      order: 22;
+   }
+
+   .art-23 {
+      order: 23;
+   }
+
+   .art-24 {
+      order: 20;
+   }
+
+   .art-25 {
+      order: 24;
+   }
+
+   .art-26 {
+      order: 25;
+   }
+
+   .art-27 {
+      order: 26;
+   }
+
+   .art-28 {
+      order: 28;
+   }
+
+   .art-29 {
+      order: 29;
+   }
+
+   .art-30 {
+      order: 27;
+   }
+
+   .art-31 {
+      order: 30;
+   }
+
+   .art-32 {
+      order: 31;
+   }
+
+   .art-33 {
+      order: 32;
+   }
+
+   .art-34 {
+      order: 34;
+   }
+
+   .art-35 {
+      order: 35;
+   }
+
+   .art-36 {
+      order: 33;
+   }
+
+   .art-37 {
+      order: 36;
    }
 }
 
 /* * MACBOOK PRO * */
 @media only screen and (min-width: 1280px) {
 
-   .art-container {
-      margin-bottom: 0;
-      order: 0;
-   }
-}
-
-/* * IMAC */
-@media only screen and (min-width: 1537px) and (max-width: 2560px) {
-
    .art-1 {
-      order: 1;
+      order: 0;
    }
 
    .art-2 {
-      order: 2;
+      order: 1;
    }
 
    .art-3 {
-      order: 3;
+      order: 2;
    }
 
    .art-4 {
@@ -159,7 +234,7 @@
    }
 
    .art-5 {
-      order: 6;
+      order: 3;
    }
 
    .art-6 {
@@ -167,42 +242,143 @@
    }
 
    .art-7 {
-      order: 7;
+      order: 6;
    }
 
    .art-8 {
-      order: 20;
+      order: 7;
+   }
+
+   .art-9 {
+      order: 10;
+   }
+
+   .art-10 {
+      order: 11;
+   }
+
+   .art-11 {
+      order: 8;
+   }
+
+   .art-12 {
+      order: 9;
    }
 
    .art-13 {
-      order: 8;
+      order: 12;
    }
 
    .art-14 {
-      order: 8;
-   }
-
-   .art-15 {
-      order: 8;
-   }
-
-   .art-16 {
       order: 15;
    }
 
-   .art-17 {
+   .art-15 {
       order: 16;
    }
 
-   .art-18 {
+   .art-16 {
       order: 17;
    }
 
+   .art-17 {
+      order: 13;
+   }
+
+   .art-18 {
+      order: 14;
+   }
+
    .art-19 {
-      order: 18;
+      order: 20;
    }
 
    .art-20 {
+      order: 21;
+   }
+
+   .art-21 {
+      order: 22;
+   }
+
+   .art-22 {
+      order: 24;
+   }
+
+   .art-23 {
+      order: 23;
+      width: 90%;
+   }
+
+   .art-24 {
+      order: 18;
+   }
+
+   .art-25 {
+      order: 25;
+      width: 80%;
+   }
+
+   .art-26 {
+      order: 26;
+   }
+
+   .art-27 {
+      order: 27;
+   }
+
+   .art-28 {
+      order: 28;
+   }
+
+   .art-29 {
+      order: 30;
+   }
+
+   .art-30 {
+      order: 28;
+   }
+
+   .art-31 {
       order: 19;
+   }
+
+   .art-32 {
+      order: 32;
+   }
+
+   .art-33 {
+      order: 33;
+   }
+
+   .art-34 {
+      order: 35;
+   }
+
+   .art-35 {
+      order: 36;
+   }
+
+   .art-36 {
+      order: 29;
+   }
+
+   .art-37 {
+      order: 37;
+   }
+}
+
+/* * IMAC */
+@media only screen and (min-width: 1537px) and (max-width: 2560px) {
+
+   .art-container {
+      order: 0;
+   }
+
+   .art-11,
+   .art-12,
+   .art-25 {
+      width: 75%;
+      display: flex;
    }
 }

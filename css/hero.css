@@ -1,7 +1,27 @@
 /* * IPHONE * */
 
+html, body {
+   height: 100%;
+}
+
+body {
+   display: flex;
+   flex-direction: column;
+}
+
+header {
+   flex-shrink: 0;
+   /* header keeps its natural height */
+}
+
 .hero-container {
-   margin: 1.8rem 0 0 0;
+   flex: 1;
+   /* takes all remaining vertical space */
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 0;
+   overflow: hidden;
    text-align: center;
 }
 
@@ -10,27 +30,29 @@
 }
 
 .hero2 {
-   width: 100%;
+   display: block;
+   max-width: 100%;
+   max-height: 100%;
+   width: auto;
+   height: auto;
+   object-fit: contain;
+   /* scales the image to fit without cropping */
    border: 0.3rem solid black;
 }
 
-/* * IPAD * */
-@media only screen and (min-width: 768px) {
-
+/* * MACBOOK PRO * */
+@media only screen and (min-width: 1280px) {
    .hero {
-      display: inline;
-      width: 90vw;
+      display: block;
+      max-width: 90vw;
+      max-height: 100%;
+      width: auto;
+      height: auto;
+      object-fit: contain;
       border: 0.3rem solid black;
    }
 
    .hero2 {
       display: none;
-   }
-}
-
-/* * IMAC * */
-@media only screen and (min-width: 1537px) and (max-width: 2560px) {
-   .hero {
-      width: 75vw;
    }
 }
