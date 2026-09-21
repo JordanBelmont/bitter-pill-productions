@@ -1,43 +1,42 @@
-/* * IPHONE * */
-
+/* * Mobile * */
 .blog-display {
    margin: 1.8rem 2.5rem;
 }
 
 .blog-card {
    position: relative;
-   padding: 1.25rem;
    margin-bottom: 1.25rem;
-   box-shadow: 0 0.1rem 0.4rem -0.06rem hsl(0, 0%, 20%);
-   color: var(--dark4);
-   font-family: 'Nasal';
-   background-color: var(--light2);
+   padding: 1.25rem;
    border-radius: 0.5rem;
+   background-color: var(--light2);
+   color: var(--dark4);
+   font-family: "Nasal";
+   box-shadow: 0 0.1rem 0.4rem -0.06rem hsl(0, 0%, 20%);
 }
 
 .blog-li {
    display: flex;
    align-items: center;
    justify-content: center;
-   text-align: center;
    height: 2.5rem;
-   font-family: 'Nasal';
+   text-align: center;
+   font-family: "Nasal";
    font-size: 1.25rem;
 }
 
 .blog-article {
    display: inline-block;
-   font-family: 'Nasal';
+   font-family: "Nasal";
    font-size: 1.25rem;
    letter-spacing: 0.06rem;
    text-decoration: none;
-   color: var(--dark4)
+   color: var(--dark4);
+   transition: color 0.3s ease-in-out;
 }
 
 .blog-article:hover,
 .blog-article:focus {
    color: var(--pillpink);
-   transition: .3s ease-in-out;
 }
 
 .blog-background-1,
@@ -53,23 +52,23 @@
 }
 
 .blog-background-3 {
-   background-image: url("../images/blog-images/Blog-3.jpg");
+   background-image: url("../../images/blog-images/Blog-3.jpg");
 }
 
 .blog-background-2 {
-   background-image: url("../images/blog-images/Blog-2.jpg");
+   background-image: url("../../images/blog-images/Blog-2.jpg");
 }
 
 .blog-background-1 {
-   background-image: url("../images/blog-images/Blog-1.jpg");
+   background-image: url("../../images/blog-images/Blog-1.jpg");
 }
 
 .blog-title {
    display: flex;
    justify-content: center;
    align-items: center;
-   text-align: center;
    margin: 0.9rem 0;
+   text-align: center;
    font-size: 1.5rem;
    font-weight: bold;
    letter-spacing: 0.1rem;
@@ -78,8 +77,8 @@
    pointer-events: none;
 }
 
-.blog-title:after,
-.blog-title:before {
+.blog-title::before,
+.blog-title::after {
    content: '';
    width: 6.2rem;
    height: 0.1rem;
@@ -87,9 +86,8 @@
    background: var(--pillpink);
 }
 
-/* * IPAD * */
+/* * Tablet * */
 @media only screen and (min-width: 768px) {
-
    .blog-card {
       margin-bottom: 0;
    }
@@ -97,11 +95,7 @@
    .blog-background-1,
    .blog-background-2,
    .blog-background-3 {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
       padding: 21.3%;
       background-size: contain;
-      background-repeat: no-repeat;
    }
 }

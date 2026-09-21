@@ -1,5 +1,4 @@
-/* * IPHONE * */
-
+/* * Mobile * */
 .dark-theme,
 .dark-theme header {
    background-color: var(--dark2);
@@ -34,19 +33,6 @@
    box-shadow: 0 0.18rem 0.4rem -0.06rem hsl(0, 0%, 0%);
 }
 
-/* .dark-theme .code-title:after, 
-.dark-theme .pixel-title:before,
-.dark-theme .blog-title:after,
-.dark-theme .blog-title:before,
-.dark-theme .article-title:after, 
-.dark-theme .article-title:before,
-.dark-theme .profile-title-container:after, 
-.dark-theme .profile-title-container:before, 
-.dark-theme .contact-title-container:after, 
-.dark-theme .contact-title-container:before {
-   background-color: var(--pillpink);
-} */
-
 .dark-theme .art-link,
 .dark-theme .pixel-link,
 .dark-theme .icon-link,
@@ -70,7 +56,6 @@
 .dark-theme .error-text,
 .dark-theme .blog-article {
    color: var(--light3);
-   /* outline-color: var(--pillpink); */
 }
 
 .dark-theme .pixel-container {
@@ -90,7 +75,7 @@
 
 .dark-theme .contact-input:focus,
 .dark-theme .contact-textarea:focus {
-   border: 0.1rem solid var(--light1);
+   border-color: var(--light1);
 }
 
 .dark-theme .submit-button {
@@ -113,7 +98,7 @@
 .dark-theme .foot-icon:hover,
 .dark-theme .foot-link:focus .foot-icon {
    filter: invert(40%) sepia() saturate(1000%) hue-rotate(85deg) contrast(80%);
-   transition: .2s ease-in-out;
+   transition: filter 0.2s ease-in-out;
 }
 
 .dark-theme .code-icon:hover,

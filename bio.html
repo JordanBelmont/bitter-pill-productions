@@ -1,46 +1,25 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
 
 <head>
    <meta charset="utf-8">
    <meta name="websitedescription"
          content="test">
-   <meta http-equiv="imagetoolbar"
-         content="no">
-   <meta http-equiv="x-ua-compatible"
-         content="ie=edge">
    <meta name="viewport"
          content="width=device-width, initial-scale=1">
-
-   <link rel="shortcut icon"
+   <link rel="icon"
          href="icons/favicon/favicon.ico"
-         type="image/x-icon">
+         sizes="any">
+   <link rel="icon"
+         type="image/png"
+         sizes="32x32"
+         href="icons/favicon/favicon-32x32.png">
+   <link rel="icon"
+         type="image/png"
+         sizes="16x16"
+         href="icons/favicon/favicon-16x16.png">
    <link rel="apple-touch-icon"
          href="icons/favicon/apple-touch-icon.png">
-   <link rel="apple-touch-icon"
-         sizes="57x57"
-         href="icons/favicon/apple-touch-icon-57x57.png">
-   <link rel="apple-touch-icon"
-         sizes="72x72"
-         href="icons/favicon/apple-touch-icon-72x72.png">
-   <link rel="apple-touch-icon"
-         sizes="76x76"
-         href="icons/favicon/apple-touch-icon-76x76.png">
-   <link rel="apple-touch-icon"
-         sizes="114x114"
-         href="icons/favicon/apple-touch-icon-114x114.png">
-   <link rel="apple-touch-icon"
-         sizes="120x120"
-         href="icons/favicon/apple-touch-icon-120x120.png">
-   <link rel="apple-touch-icon"
-         sizes="144x144"
-         href="icons/favicon/apple-touch-icon-144x144.png">
-   <link rel="apple-touch-icon"
-         sizes="152x152"
-         href="icons/favicon/apple-touch-icon-152x152.png">
-   <link rel="apple-touch-icon"
-         sizes="180x180"
-         href="icons/favicon/apple-touch-icon-180x180.png">
 
    <link rel="stylesheet"
          href="css/style.css">
@@ -62,10 +41,11 @@
       </a>
       <div class="toggle-btn">
          <input class="check"
-                type="checkbox">
+                type="checkbox"
+                aria-label="Toggle dark mode">
          <span></span>
       </div>
-      <nav id=navBurger>
+      <nav id="navBurger">
          <ul class="nav-ul">
             <li class="nav-li"><a class="nav-link"
                   href="./art.html">ART</a></li>
@@ -82,7 +62,9 @@
          </ul>
       </nav>
       <button class="burger-button"
-              id='burgerButton'>
+              id="burgerButton"
+              aria-label="Open menu"
+              aria-expanded="false">
          <svg viewBox="0 0 100 80"
               width="40"
               height="40">
@@ -106,7 +88,7 @@
          <p class="profile-stats">Jordan Belmont</p>
          <br><br>
          <h2 class="profile-heading">RESIDENCE:</h2>
-         <p class="profile-stats">Bristol, United Kingdom</p>
+         <p class="profile-stats">Portishead, United Kingdom</p>
          <br><br>
          <p class="profile-text">
             Jordan Belmont has had creativity coursing through his veins for as long as he can
@@ -117,8 +99,7 @@
             bootcamp, and has gone on to specialise in (or at least dabble in) such languages and frameworks as
             Tailwind CSS, JavaScript, ReactJS/Redux, Typescript, PHP and Node.JS.
             <br><br>
-            With his eyes set on the world of video game development, it was only a matter of time before Jordan also
-            delved into the world of pixel art to round out his repertoire.
+            Rounding out his repertoire of skills, Jordan has taken to both pixel art as well as UI/UX design.
             <br><br>
             Additionally, he has a strong penchant for hitting the gym, playing boardgames, reading dystopian fiction,
             and admits his biggest weakness is that he only has two hands with which to satiate his creative hunger.
@@ -142,35 +123,57 @@
       <div class="contact-container bio-5">
          <form class="contact-form"
                id="contactForm"
-               method="POST"
-               action="/php/contact-form.php">
+               action="https://api.web3forms.com/submit"
+               method="POST">
+            <!-- Required: your access key -->
+            <input type="hidden"
+                   name="access_key"
+                   value="796c9fa4-d769-4d6c-b287-652eb7834759">
+
+            <!-- Optional: custom subject line -->
+            <input type="hidden"
+                   name="subject"
+                   value="New message from Bitter Pill Productions">
+
+            <!-- Optional: redirect after success -->
+            <!-- <input type="hidden" name="redirect" value="https://bitterpillproductions.com/thank-you.html"> -->
+
             <label class="contact-label full-name"
-                   for="inputname">FULL NAME</label>
+                   for="name">
+               Full Name
+            </label>
             <input class="contact-input"
-                   id="inputName"
                    type="text"
                    name="name"
+                   id="name"
                    required>
+
             <label class="contact-label address"
-                   for="inputemail">E-MAIL ADDRESS</label>
+                   for="email">
+               Email
+            </label>
             <input class="contact-input"
-                   id="inputEmail"
                    type="email"
                    name="email"
+                   id="email"
                    required>
+
             <label class="contact-label message"
-                   for="message">MESSAGE</label>
+                   for="message">
+               Message
+            </label>
             <textarea class="contact-textarea"
-                      id="inputMessage"
                       name="message"
-                      rows="10"
-                      cols="33"
-                      required></textarea>
+                      id="message"
+                      required>
+                     </textarea>
+
             <div class="submit-container">
-               <input class="submit-button"
-                      id="inputSubmit"
-                      type="submit"
-                      value="SEND">
+               <button class="submit-button"
+                       id="inputSubmit"
+                       type="submit">
+                  Send
+               </button>
             </div>
          </form>
       </div>
@@ -187,6 +190,7 @@
       <section class="foot-container">
          <a href="https://twitter.com/BitterPillProd2"
             target="_blank"
+            rel="noopener noreferrer"
             class="foot-link">
             <img class="foot-icon"
                  src="icons/footer/twitter.svg"
@@ -195,6 +199,7 @@
          </a>
          <a href="https://www.instagram.com/bitterpillproductions"
             target="_blank"
+            rel="noopener noreferrer"
             class="foot-link">
             <img class="foot-icon"
                  src="icons/footer/instagram.svg"
@@ -203,6 +208,7 @@
          </a>
          <a href="https://github.com/JordanBelmont"
             target="_blank"
+            rel="noopener noreferrer"
             class="foot-link">
             <img class="foot-icon"
                  src="icons/footer/github.svg"

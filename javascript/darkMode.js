@@ -29,10 +29,3 @@ swtch.addEventListener("click", () => {
       logo.classList.add('pill-dark');
    }
 });
-
-
-
-
-
-
-

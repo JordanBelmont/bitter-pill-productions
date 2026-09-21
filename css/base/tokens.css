@@ -1,16 +1,25 @@
 :root {
+
+   /* Brand */
    --pillpink: #D93CAC;
    --pillgreen: #68E931;
+
+   /* Apps */
    --dpadyellow: #F7EB32;
    --todouncomplete: #FF4D00;
    --todocomplete: #0BD4A2;
-   --light1: #F9F9F9;
+
+   /* Neutrals */
+   --light1: #F7F5F2;
    --light2: #E0E0E0;
    --light3: #C7C7C7;
-   --light4: #7D7D7D;
    --dark1: #1A1A1A;
    --dark2: #232323;
    --dark3: #343434;
    --dark4: #575757;
-   
+
+   /* Breakpoints */
+   --bp-tablet: 768px;
+   --bp-laptop: 1280px;
+   --bp-desktop: 1537px;
 }

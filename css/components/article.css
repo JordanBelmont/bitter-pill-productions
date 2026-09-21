@@ -1,24 +1,23 @@
-/* * IPHONE * */
-
+/* * Mobile * */
 .article-display {
    margin: 1.8rem 2.5rem;
 }
 
 .article-card {
    padding: 1.25rem;
-   box-shadow: 0 0.1rem 0.4rem -0.06rem hsl(0, 0%, 20%);
-   color: var(--dark4);
-   background-color: var(--light2);
    border-radius: 0.5rem;
+   background-color: var(--light2);
+   color: var(--dark4);
+   box-shadow: 0 0.1rem 0.4rem -0.06rem hsl(0, 0%, 20%);
 }
 
 .article-title {
    display: flex;
    justify-content: center;
    align-items: center;
+   margin: 0.9rem 0 1.8rem;
    text-align: center;
-   margin: 0.9rem 0px 1.8rem 0px;
-   font-family: 'Nasal';
+   font-family: "Nasal";
    font-size: 1.8rem;
    font-weight: bold;
    letter-spacing: 0.1rem;
@@ -26,8 +25,8 @@
    pointer-events: none;
 }
 
-.article-title:after,
-.article-title:before {
+.article-title::before,
+.article-title::after {
    content: '';
    width: 6.2rem;
    height: 0.1rem;
@@ -38,50 +37,52 @@
 .article-header {
    margin-top: 2.5rem;
    text-align: center;
-   font-family: 'Nasal';
-   font-weight: bold;
+   font-family: "Nasal";
    font-size: 1.5rem;
+   font-weight: bold;
    letter-spacing: 0.2rem;
    line-height: 1.3rem;
    text-transform: uppercase;
    pointer-events: none;
 }
 
-.article-intro,
-.article-text {
+.article-intro {
    margin-top: 1.3rem;
-   font-family: 'Nasal';
+   font-family: "Nasal";
    font-size: 1.3rem;
    letter-spacing: 0.1rem;
    line-height: 1.8rem;
    pointer-events: none;
 }
 
-.article-image {
-   margin-top: 1.8rem;
-   width: 100%;
+.article-text {
+   font-family: "Inter";
+   font-size: 1.3rem;
+   letter-spacing: 0.1rem;
+   line-height: 1.8rem;
+   pointer-events: none;
 }
 
 .back-container {
-   text-align: right;
    margin-top: 0.9rem;
+   text-align: right;
 }
 
 .back {
    margin-top: 0.9rem;
-   font-family: 'Nasal';
+   font-family: "Nasal";
    font-size: 1.1rem;
    font-weight: bold;
-   text-decoration: none;
    letter-spacing: 0.1rem;
+   text-decoration: none;
    color: var(--dark4);
    outline-color: var(--pillpink);
+   transition: color 0.3s ease-in-out;
 }
 
 .back:hover,
 .back:focus {
    color: var(--pillpink);
-   transition: .3s ease-in-out;
 }
 
 .article-figure {
@@ -90,22 +91,21 @@
 
 .article-figcaption {
    margin-top: 0.3rem;
-   font-family: 'Nasal';
+   font-family: "Inter";
    font-size: 1rem;
    letter-spacing: 0.08rem;
    line-height: 1.3rem;
    pointer-events: none;
 }
 
-/* * IPAD * */
+/* * Tablet * */
 @media only screen and (min-width: 768px) {
-
    .article-display {
       margin: 1.8rem 10%;
    }
 
    .article-card {
-      padding: 2.5rem 1.25rem 1.25rem 1.25rem;
+      padding: 2.5rem 1.25rem 1.25rem;
    }
 
    .article-intro,
@@ -118,17 +118,15 @@
    }
 }
 
-/* * MACBOOK PRO * */
+/* * Laptop * */
 @media only screen and (min-width: 1280px) {
-
    .article-display {
       margin: 1.8rem 15%;
    }
 }
 
-/* * IMAC * */
+/* * Large Desktop * */
 @media only screen and (min-width: 1537px) and (max-width: 2560px) {
-
    .article-display {
       margin: 1.8rem 25%;
    }

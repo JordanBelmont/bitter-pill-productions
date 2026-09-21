@@ -1,5 +1,4 @@
-/* * IPHONE * */
-
+/* * Mobile * */
 .bio-display {
    display: flex;
    flex-direction: column;
@@ -11,48 +10,24 @@
    display: flex;
    align-items: center;
    justify-content: center;
-   text-align: center;
    margin-bottom: 2.5rem;
-   font-family: 'Nasal';
+   text-align: center;
+   font-family: "Nasal";
    font-size: 1.5rem;
    font-weight: bold;
    letter-spacing: 0.1rem;
    color: var(--dark4);
 }
 
-.profile-title-container:after,
-.profile-title-container:before,
-.contact-title-container:after,
-.contact-title-container:before {
+.profile-title-container::before,
+.profile-title-container::after,
+.contact-title-container::before,
+.contact-title-container::after {
    content: '';
    width: 9.3rem;
    height: 0.1rem;
    margin: 0 0.6rem;
    background: var(--pillpink);
-}
-
-.bio-1 {
-   order: 0;
-}
-
-.bio-2 {
-   order: 2;
-}
-
-.bio-3 {
-   order: 1;
-}
-
-.bio-4 {
-   order: 3;
-}
-
-.bio-5 {
-   order: 4;
-}
-
-.bio-6 {
-   order: 5;
 }
 
 .contact-title-container {
@@ -61,7 +36,7 @@
 
 .profile-container,
 .contact-container {
-   font-family: 'Nasal';
+   font-family: "Nasal";
    font-size: 1.25rem;
    letter-spacing: 0.06rem;
    line-height: 1.5rem;
@@ -69,13 +44,14 @@
 }
 
 .profile-heading {
+   display: block;
    font-weight: bold;
    letter-spacing: 0.1rem;
 }
 
-.profile-heading,
 .profile-stats {
    display: block;
+   font-family: "Inter";
 }
 
 .contact-label {
@@ -96,7 +72,7 @@
    margin-top: 1.25rem;
    border: 0.1rem solid var(--light4);
    border-radius: 0.3rem;
-   background-color: var(--light1);
+   background-color: var(--light2);
    font-family: monospace;
    font-size: 1.25rem;
    letter-spacing: 0.06rem;
@@ -105,26 +81,25 @@
 
 .contact-input:focus,
 .contact-textarea:focus {
-   border: 0.1rem solid black;
-   border-radius: 0.3rem;
+   border-color: black;
    outline: none;
 }
 
 .submit-container {
-   text-align: center;
    margin-top: 1.25rem;
+   text-align: center;
 }
 
 .submit-button {
    padding: 0.6rem;
    border: 0.1rem solid var(--light4);
    border-radius: 0.3rem;
-   font-family: 'Nasal';
+   background: none;
+   font-family: "Nasal";
    font-size: 1.1rem;
    font-weight: bold;
    letter-spacing: 0.1rem;
    color: var(--dark4);
-   background: none;
 }
 
 .submit-button:hover {
@@ -132,15 +107,14 @@
 }
 
 .submit-button:focus {
-   border: 0.1rem solid black;
-   border-radius: 0.3rem;
+   border-color: black;
    outline: none;
    color: black;
 }
 
 .bio-container1 {
-   text-align: center;
    margin-bottom: 1.25rem;
+   text-align: center;
 }
 
 .bio-container2 {
@@ -153,58 +127,65 @@
    object-fit: cover;
 }
 
-/* * IPAD * */
-@media only screen and (min-width: 768px) {
+/* * Laptop * */
+@media only screen and (min-width: 1280px) {
+   .bio-display {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+         "profile-title image1"
+         "profile       image1"
+         "contact-title image2"
+         "contact       image2";
+      gap: 2rem 3rem;
+      margin: 1.8rem 3.7rem;
+   }
 
    .bio-1 {
-      order: 1;
+      grid-area: profile-title;
    }
 
    .bio-2 {
-      order: 4;
+      grid-area: profile;
    }
 
    .bio-3 {
-      order: 2;
+      grid-area: image1;
    }
 
    .bio-4 {
-      order: 5;
+      grid-area: contact-title;
    }
 
    .bio-5 {
-      order: 6;
+      grid-area: contact;
    }
 
    .bio-6 {
-      order: 3;
+      grid-area: image2;
    }
 
-   .profile-title-container {
-      margin-bottom: 1.8rem;
-   }
-
+   .profile-title-container,
    .contact-title-container {
       margin-top: 0;
-      margin-bottom: 1.8rem;
+      margin-bottom: 1rem;
+   }
+
+   .bio-container1,
+   .bio-container2 {
+      display: block;
+      text-align: center;
+   }
+
+   .bio-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
    }
 
    .profile-container,
    .contact-container {
-      display: block;
       text-align: justify;
-      margin: 0.6rem;
-      font-family: 'Nasal';
-      font-size: 1.25rem;
-      letter-spacing: 0.06rem;
-      color: var(--dark4);
-   }
-
-   .contact-label {
-      display: block;
-      margin-top: 1.25rem;
-      font-weight: bold;
-      letter-spacing: 0.1rem;
    }
 
    .profile-heading,
@@ -212,85 +193,21 @@
       display: inline;
    }
 
-   .profile-heading {
-      letter-spacing: 0.1rem;
-   }
-
    .profile-stats {
       padding-left: 1.25rem;
    }
 
-   .full-name {
-      margin-top: 0;
-   }
-
-   .submit-container {
-      display: block;
-      margin-top: 0;
-   }
-
    .submit-button {
-      width: 20%;
-      margin-top: 1.1rem
-   }
-
-   .bio-container2 {
-      display: block;
-      text-align: center;
-   }
-
-   .profile-text {
-      margin-bottom: 3rem;
-      float: right;
+      width: 40%;
    }
 }
 
-/* * MACBOOK PRO * */
-@media only screen and (min-width: 1280px) {
-
-   .bio-1 {
-      order: 0;
-   }
-
-   .bio-2 {
-      order: 3;
-   }
-
-   .bio-3 {
-      order: 2;
-   }
-
-   .bio-4 {
-      order: 4;
-   }
-
-   .bio-5 {
-      order: 5;
-   }
-
-   .bio-6 {
-      order: 6;
-   }
-
-   .profile-title-container {
-      margin-bottom: 0;
-
-   }
-
-   .contact-title-container {
-      margin-bottom: 0;
-   }
-
-   .bio-container1,
-   .bio-container2 {
-      text-align: right;
-   }
-
-   .bio-container2 {
-      order: 4;
+@media (min-width: 1280px) {
+   .bio-display {
+      margin: 1.8rem 8%;
    }
 
    .bio-image {
-      width: 35rem;
+      max-width: 35rem;
    }
 }

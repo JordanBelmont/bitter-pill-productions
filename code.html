@@ -1,46 +1,25 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
 
 <head>
    <meta charset="utf-8">
    <meta name="websitedescription"
          content="test">
-   <meta http-equiv="imagetoolbar"
-         content="no">
-   <meta http-equiv="x-ua-compatible"
-         content="ie=edge">
    <meta name="viewport"
          content="width=device-width, initial-scale=1">
-
-   <link rel="shortcut icon"
+   <link rel="icon"
          href="icons/favicon/favicon.ico"
-         type="image/x-icon">
+         sizes="any">
+   <link rel="icon"
+         type="image/png"
+         sizes="32x32"
+         href="icons/favicon/favicon-32x32.png">
+   <link rel="icon"
+         type="image/png"
+         sizes="16x16"
+         href="icons/favicon/favicon-16x16.png">
    <link rel="apple-touch-icon"
          href="icons/favicon/apple-touch-icon.png">
-   <link rel="apple-touch-icon"
-         sizes="57x57"
-         href="icons/favicon/apple-touch-icon-57x57.png">
-   <link rel="apple-touch-icon"
-         sizes="72x72"
-         href="icons/favicon/apple-touch-icon-72x72.png">
-   <link rel="apple-touch-icon"
-         sizes="76x76"
-         href="icons/favicon/apple-touch-icon-76x76.png">
-   <link rel="apple-touch-icon"
-         sizes="114x114"
-         href="icons/favicon/apple-touch-icon-114x114.png">
-   <link rel="apple-touch-icon"
-         sizes="120x120"
-         href="icons/favicon/apple-touch-icon-120x120.png">
-   <link rel="apple-touch-icon"
-         sizes="144x144"
-         href="icons/favicon/apple-touch-icon-144x144.png">
-   <link rel="apple-touch-icon"
-         sizes="152x152"
-         href="icons/favicon/apple-touch-icon-152x152.png">
-   <link rel="apple-touch-icon"
-         sizes="180x180"
-         href="icons/favicon/apple-touch-icon-180x180.png">
 
    <link rel="stylesheet"
          href="css/style.css">
@@ -62,10 +41,11 @@
       </a>
       <div class="toggle-btn">
          <input class="check"
-                type="checkbox">
+                type="checkbox"
+                aria-label="Toggle dark mode">
          <span></span>
       </div>
-      <nav id=navBurger>
+      <nav id="navBurger">
          <ul class="nav-ul">
             <li class="nav-li"><a class="nav-link"
                   href="./art.html">ART</a></li>
@@ -82,7 +62,9 @@
          </ul>
       </nav>
       <button class="burger-button"
-              id='burgerButton'>
+              id="burgerButton"
+              aria-label="Open menu"
+              aria-expanded="false">
          <svg viewBox="0 0 100 80"
               width="40"
               height="40">
@@ -100,7 +82,8 @@
       <div class="code-card code-8">
          <a class="code-container"
             href="https://jordanbelmont.github.io/deep-c/"
-            target="_blank">
+            target="_blank"
+            rel="noopener noreferrer">
             <div class="code-background-8"></div>
          </a>
          <h1 class="code-title">Deep-C</h1>
@@ -113,7 +96,8 @@
          <div class="icon-container">
             <a class="icon-link"
                href="https://github.com/JordanBelmont/deep-c"
-               target="_blank">
+               target="_blank"
+               rel="noopener noreferrer">
                <img class="code-icon"
                     src="icons/code-icons/github2.svg"
                     alt="Github Link"
@@ -132,7 +116,8 @@
       <div class="code-card code-7">
          <a class="code-container"
             href="https://jordanbelmont.github.io/abattoir-inc/"
-            target="_blank">
+            target="_blank"
+            rel="noopener noreferrer">
             <div class="code-background-7"></div>
          </a>
          <h1 class="code-title">Abattoir Inc.</h1>
@@ -145,7 +130,8 @@
          <div class="icon-container">
             <a class="icon-link"
                href="https://github.com/JordanBelmont/abattoir-inc"
-               target="_blank">
+               target="_blank"
+               rel="noopener noreferrer">
                <img class="code-icon"
                     src="icons/code-icons/github2.svg"
                     alt="Github Link"
@@ -164,7 +150,8 @@
       <div class="code-card code-6">
          <a class="code-container"
             href="https://jordanbelmont.github.io/dorsia/"
-            target="_blank">
+            target="_blank"
+            rel="noopener noreferrer">
             <div class="code-background-6"></div>
          </a>
          <h1 class="code-title">Dorsia</h1>
@@ -177,7 +164,8 @@
          <div class="icon-container">
             <a class="icon-link"
                href="https://github.com/JordanBelmont/dorsia"
-               target="_blank">
+               target="_blank"
+               rel="noopener noreferrer">
                <img class="code-icon"
                     src="icons/code-icons/github2.svg"
                     alt="Github Link"
@@ -196,7 +184,8 @@
       <div class="code-card code-5">
          <a class="code-container"
             href="https://jordanbelmont.github.io/no-escape/"
-            target="_blank">
+            target="_blank"
+            rel="noopener noreferrer">
             <div class="code-background-5"></div>
          </a>
          <h1 class="code-title">No Escape</h1>
@@ -209,6 +198,7 @@
          <div class="icon-container">
             <a href="https://github.com/JordanBelmont/no-escape"
                target="_blank"
+               rel="noopener noreferrer"
                class="icon-link">
                <img class="code-icon"
                     src="icons/code-icons/github2.svg"
@@ -240,6 +230,7 @@
          <div class="icon-container">
             <a href="https://github.com/JordanBelmont/yashana-the-oracle"
                target="_blank"
+               rel="noopener noreferrer"
                class="icon-link">
                <img class="code-icon"
                     src="icons/code-icons/github2.svg"
@@ -259,7 +250,8 @@
       <div class="code-card code-3">
          <a class="code-container"
             href="https://jordanbelmont.github.io/dpad/"
-            target="_blank">
+            target="_blank"
+            rel="noopener noreferrer">
             <div class="code-background-3"></div>
          </a>
          <h1 class="code-title">D-Pad</h1>
@@ -272,6 +264,7 @@
          <div class="icon-container">
             <a href="https://github.com/JordanBelmont/dpad"
                target="_blank"
+               rel="noopener noreferrer"
                class="icon-link">
                <img class="code-icon"
                     src="icons/code-icons/github2.svg"
@@ -292,7 +285,8 @@
       <div class="code-card code-2">
          <a class="code-container"
             href="https://jordanbelmont.github.io/checklist/"
-            target="_blank">
+            target="_blank"
+            rel="noopener noreferrer">
             <div class="code-background-2"></div>
          </a>
          <h1 class="code-title">Checklist</h1>
@@ -305,6 +299,7 @@
          <div class="icon-container">
             <a href="https://github.com/JordanBelmont/checklist"
                target="_blank"
+               rel="noopener noreferrer"
                class="icon-link">
                <img class="code-icon"
                     src="icons/code-icons/github2.svg"
@@ -324,7 +319,8 @@
       <div class="code-card code-1">
          <a class="code-container"
             href="https://jordanbelmont.github.io/ask-sothoth/"
-            target="_blank">
+            target="_blank"
+            rel="noopener noreferrer">
             <div class=" code-background-1">
             </div>
          </a>
@@ -338,6 +334,7 @@
          <div class="icon-container">
             <a href="https://github.com/JordanBelmont/ask-sothoth"
                target="_blank"
+               rel="noopener noreferrer"
                class="icon-link">
                <img class="code-icon"
                     src="icons/code-icons/github2.svg"
@@ -360,6 +357,7 @@
       <section class="foot-container">
          <a href="https://twitter.com/BitterPillProd2"
             target="_blank"
+            rel="noopener noreferrer"
             class="foot-link">
             <img class="foot-icon"
                  src="icons/footer/twitter.svg"
@@ -368,6 +366,7 @@
          </a>
          <a href="https://www.instagram.com/bitterpillproductions"
             target="_blank"
+            rel="noopener noreferrer"
             class="foot-link">
             <img class="foot-icon"
                  src="icons/footer/instagram.svg"
@@ -376,6 +375,7 @@
          </a>
          <a href="https://github.com/JordanBelmont"
             target="_blank"
+            rel="noopener noreferrer"
             class="foot-link">
             <img class="foot-icon"
                  src="icons/footer/github.svg"

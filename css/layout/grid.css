@@ -1,6 +1,5 @@
-/* * IPAD * */
+/* * Tablet * */
 @media only screen and (min-width: 768px) {
-
    .art-display {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -53,9 +52,8 @@
    }
 }
 
-/* * MACBOOK PRO * */
+/* * Laptop * */
 @media only screen and (min-width: 1280px) {
-
    .art-display {
       grid-template-columns: repeat(6, 1fr);
    }
@@ -143,9 +141,8 @@
    }
 }
 
-/* * IMAC * */
+/* * Large Desktop * */
 @media only screen and (min-width: 1537px) and (max-width: 2560px) {
-
    .art-display {
       grid-template-columns: repeat(4, 1fr);
    }

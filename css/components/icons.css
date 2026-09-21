@@ -1,5 +1,4 @@
-/* * IPHONE * */
-
+/* * Mobile * */
 .foot-container,
 .icon-container {
    display: flex;
@@ -22,7 +21,7 @@
    margin-top: 1.2rem;
 }
 
-/* * IPAD * */
+/* * Tablet * */
 @media only screen and (min-width: 768px) {
 
    .foot-link,
@@ -33,19 +32,18 @@
    .foot-icon:hover,
    .foot-link:focus .foot-icon {
       filter: invert(30%) sepia() saturate(1000%) hue-rotate(280deg) contrast(80%);
-      transition: .2s ease-in-out;
+      transition: filter 0.2s ease-in-out;
    }
 
    .code-icon:hover,
    .icon-link:focus .code-icon {
       filter: invert(5%) sepia() saturate(1000%) hue-rotate(280deg) contrast(75%);
-      transition: .2s ease-in-out;
+      transition: filter 0.2s ease-in-out;
    }
 }
 
-/* * MACBOOK PRO * */
+/* * Laptop * */
 @media only screen and (min-width: 1280px) {
-
    .icon-container {
       margin-bottom: 0.6rem;
    }

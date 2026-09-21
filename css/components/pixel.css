@@ -1,21 +1,20 @@
-/* * IPHONE * */
-
+/* * Mobile * */
 .pixel-display {
    margin: 1.8rem 2.5rem;
 }
 
 .pixel-card {
    position: relative;
-   padding: 0.6rem;
-   box-shadow: 0 0.1rem 0.4rem -0.06rem hsl(0, 0%, 20%);
-   color: var(--dark4);
-   font-family: 'Nasal';
-   text-align: center;
-   border-radius: 0.3rem;
-   background-color: var(--light2);
    width: 19rem;
    margin-left: auto;
    margin-right: auto;
+   padding: 0.6rem;
+   border-radius: 0.3rem;
+   background-color: var(--light2);
+   color: var(--dark4);
+   font-family: "Nasal";
+   text-align: center;
+   box-shadow: 0 0.1rem 0.4rem -0.06rem hsl(0, 0%, 20%);
 }
 
 .pixel-container {
@@ -28,8 +27,8 @@
 }
 
 .pixel-image {
-   background-color: var(--light4);
    margin-top: 0.3rem;
+   background-color: var(--light4);
    cursor: pointer;
 }
 
@@ -37,9 +36,8 @@
    display: none;
 }
 
-/* * IPAD * */
+/* * Tablet * */
 @media only screen and (min-width: 768px) {
-
    .pixel-container {
       /* allows for the image text to be placed relative to the image itself */
       position: relative;
@@ -50,13 +48,13 @@
    .pixel-container:focus img {
       /* acts as substitute for an overlay - overlay gets in way of modal */
       filter: brightness(25%);
-      transition: .3s ease-in-out;
+      transition: filter 0.3s ease-in-out;
    }
 
    .pixel-card {
-      padding: 20px 20px 20px 20px;
       width: 100%;
       margin: 0;
+      padding: 1.25rem;
    }
 
    .pixel-image {
@@ -64,25 +62,24 @@
    }
 
    .pixel-title {
-      z-index: 1;
       display: block;
       position: absolute;
       top: 50%;
       left: 50%;
+      z-index: 1;
+      transform: translate(-50%, -50%);
       text-align: center;
-      font-family: 'Nasal';
+      font-family: "Nasal";
       font-size: 1.5em;
       font-weight: bold;
       letter-spacing: 0.125em;
       color: var(--pillgreen);
       opacity: 0;
       /* ensures text starts in the middle of the image */
-      transform: translate(-50%, -50%);
-      transition: .3s ease-in-out;
+      transition: opacity 0.3s ease-in-out;
    }
 
    .pixel-container:hover .pixel-title {
-      /* ensures the text becomes visible on hover */
       opacity: 1;
    }
 }

@@ -1,18 +1,24 @@
-@import 'reset.css';
-@import 'nav.css';
-@import 'icons.css';
-@import 'hero.css';
-@import 'article.css';
-@import 'art.css';
-@import 'footer.css';
-@import 'code.css';
-@import 'pixel.css';
-@import 'blog.css';
-@import 'bio.css';
-@import 'article.css';
-@import '404.css';
-@import 'lightbox.css';
-@import 'colors.css';
-@import 'darkmode.css';
-@import 'typography.css';
-@import 'grid.css';
+/* Base */
+@import 'base/reset.css';
+@import 'base/tokens.css';
+@import 'base/typography.css';
+
+/* Layout */
+@import 'layout/nav.css';
+@import 'layout/footer.css';
+@import 'layout/grid.css';
+@import 'layout/hero.css';
+
+/* Components */
+@import 'components/art.css';
+@import 'components/blog.css';
+@import 'components/code.css';
+@import 'components/pixel.css';
+@import 'components/bio.css';
+@import 'components/article.css';
+@import 'components/404.css';
+@import 'components/lightbox.css';
+@import 'components/icons.css';
+
+/* Themes */
+@import 'themes/darkmode.css';

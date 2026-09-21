@@ -1,0 +1,13 @@
+@font-face {
+   font-family: "Nasal";
+   font-weight: normal;
+   font-display: swap;
+   src: url('../../fonts/nasalization-rg.ttf') format('truetype');
+}
+
+@font-face {
+   font-family: "Inter";
+   font-weight: normal;
+   font-display: swap;
+   src: url('../../fonts/InterVariable.ttf') format('truetype');
+}
