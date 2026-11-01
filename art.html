@@ -3,10 +3,11 @@
 
 <head>
    <meta charset="utf-8">
-   <meta name="websitedescription"
+   <meta name="description"
          content="test">
    <meta name="viewport"
          content="width=device-width, initial-scale=1">
+
    <link rel="icon"
          href="icons/favicon/favicon.ico"
          sizes="any">
@@ -20,22 +21,24 @@
          href="icons/favicon/favicon-16x16.png">
    <link rel="apple-touch-icon"
          href="icons/favicon/apple-touch-icon.png">
-
    <link rel="stylesheet"
          href="css/style.css">
+
    <script defer
            src="javascript/burger.js"></script>
    <script defer
            src="javascript/lightbox.js"></script>
    <script defer
            src="javascript/darkMode.js"></script>
+   <script defer
+           src="javascript/year.js"></script>
 
-   <title>Bitter Pill Productions: Art</title>
+   <title>Art | Bitter Pill Productions</title>
 </head>
 
 <body>
    <header>
-      <a href="./index.html"
+      <a href="./index"
          class="pill-link">
          <img class="pill-light"
               src="icons/logo/bitterpill-light.png"
@@ -50,26 +53,28 @@
       <nav id="navBurger">
          <ul class="nav-ul">
             <li class="nav-li"><a class="art-link"
-                  href="./art.html">ART</a></li>
+                  href="./art">ART</a></li>
             <li class="nav-li"><a class="nav-link"
-                  href="./404.html">UI/UX</a></li>
+                  href="./404">UI/UX</a></li>
             <li class="nav-li"><a class="nav-link"
-                  href="./code.html">CODE</a></li>
+                  href="./code">CODE</a></li>
             <li class="nav-li"><a class="nav-link"
-                  href="./pixel.html">PIXEL</a></li>
+                  href="./pixel">PIXEL</a></li>
             <li class="nav-li"><a class="nav-link"
-                  href="./blog.html">BLOG</a></li>
+                  href="./blog">BLOG</a></li>
             <li class="nav-li"><a class="nav-link"
-                  href="./bio.html">BIO</a></li>
+                  href="./bio">BIO</a></li>
          </ul>
       </nav>
       <button class="burger-button"
               id="burgerButton"
+              type="button"
               aria-label="Open menu"
               aria-expanded="false">
          <svg viewBox="0 0 100 80"
               width="40"
-              height="40">
+              height="40"
+              aria-hidden="true">
             <path class="line line1"
                   d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
             <path class="line line2"
@@ -80,230 +85,238 @@
       </button>
    </header>
 
-   <div class="art-display">
-      <button class="art-container art-1">
-         <img src="images/art-images/Amadeus.jpg"
-              class="art-image"
-              alt="Amadeus">
-         <h1 class="art-title">Amadeus</h1>
-      </button>
-      <button class="art-container art-2">
-         <img src="images/art-images/Super Wario Bros.jpg"
-              class="art-image"
-              alt="Super Wario Brothers">
-         <h1 class="art-title">Super Wario Bros.</h1>
-      </button>
-      <button class="art-container art-3">
-         <img src="images/art-images/Splatterhouse.jpg"
-              class="art-image"
-              alt="Splatterhouse">
-         <h1 class="art-title">Splatterhouse</h1>
-      </button>
-      <button class="art-container art-4">
-         <img src="images/art-images/Creepshow 2.jpg"
-              class="art-image"
-              alt="Creepshow 2">
-         <h1 class="art-title">Creepshow 2</h1>
-      </button>
-      <button class="art-container art-5">
-         <img src="images/art-images/What You Are.jpg"
-              class="art-image"
-              alt="What You Are">
-         <h1 class="art-title">What You Are</h1>
-      </button>
-      <button class="art-container art-6">
-         <img src="images/art-images/Sixteen Candles.jpg"
-              class="art-image"
-              alt="Sixteen Candles">
-         <h1 class="art-title">Sixteen Candles</h1>
-      </button>
-      <button class="art-container art-7">
-         <img src="images/art-images/Manhunt.jpg"
-              class="art-image"
-              alt="Manhunt">
-         <h1 class="art-title">Manhunt</h1>
-      </button>
-      <button class="art-container art-8">
-         <img src="images/art-images/Lilith.jpg"
-              class="art-image"
-              alt="Lilith">
-         <h1 class="art-title">Lilith</h1>
-      </button>
-      <button class="art-container art-9">
-         <img src="images/art-images/Doomsday.jpg"
-              class="art-image"
-              alt="Doomsday">
-         <h1 class="art-title">Doomsday</h1>
-      </button>
-      <button class="art-container art-10">
-         <img src="images/art-images/Altered Beast.jpg"
-              class="art-image"
-              alt="Altered Beast">
-         <h1 class="art-title">Altered Beast</h1>
-      </button>
-      <button class="art-container art-11">
-         <img src="images/art-images/Open Your Mind.jpg"
-              class="art-image"
-              alt="Open Your Mind">
-         <h1 class="art-title">Open Your Mind</h1>
-      </button>
-      <button class="art-container art-12">
-         <img src="images/art-images/Binding of Isaac.jpg"
-              class="art-image"
-              alt="Binding of Isaac">
-         <h1 class="art-title">Binding of Isaac</h1>
-      </button>
-      <button class="art-container art-13">
-         <img src="images/art-images/Carmen Sandiego.jpg"
-              class="art-image"
-              alt="Carmen Sandiego">
-         <h1 class="art-title">Carmen Sandiego</h1>
-      </button>
-      <button class="art-container art-14">
-         <img src="images/art-images/Akira.jpg"
-              class="art-image"
-              alt="Akira">
-         <h1 class="art-title">Akira</h1>
-      </button>
-      <button class="art-container art-15">
-         <img src="images/art-images/Nun Massacre.jpg"
-              class="art-image"
-              alt="Nun Massacre">
-         <h1 class="art-title">Nun Massacre</h1>
-      </button>
-      <button class="art-container art-16">
-         <img src="images/art-images/Five Nights at Freddy's.jpg"
-              class="art-image"
-              alt="Five Nights at Freddy's">
-         <h1 class="art-title">Five Nights at Freddy's</h1>
-      </button>
-      <button class="art-container art-17">
-         <img src="images/art-images/ClayFighter.jpg"
-              class="art-image"
-              alt="ClayFighter">
-         <h1 class="art-title">ClayFighter</h1>
-      </button>
-      <button class="art-container art-18">
-         <img src="images/art-images/Bloodrayne.jpg"
-              class="art-image"
-              alt="Bloodrayne">
-         <h1 class="art-title">Bloodrayne</h1>
-      </button>
-      <button class="art-container art-19">
-         <img src="images/art-images/Iznogoud.jpg"
-              class="art-image"
-              alt="Iznogoud">
-         <h1 class="art-title">Iznogoud</h1>
-      </button>
-      <button class="art-container art-20">
-         <img src="images/art-images/Don't Let Him In.jpg"
-              class="art-image"
-              alt="Don't Let Him In">
-         <h1 class="art-title">Don't Let Him In</h1>
-      </button>
-      <button class="art-container art-21">
-         <img src="images/art-images/Pokemon Violet.jpg"
-              class="art-image"
-              alt="Pokemon Violet">
-         <h1 class="art-title">Pokemon Violet</h1>
-      </button>
-      <button class="art-container art-22">
-         <img src="images/art-images/Hungry Like the Wolf.jpg"
-              class="art-image"
-              alt="Hungry Like the Wolf">
-         <h1 class="art-title">Hungry Like the Wolf</h1>
-      </button>
-      <button class="art-container art-23">
-         <img src="images/art-images/Advance Wars.jpg"
-              class="art-image"
-              alt="Advance Wars">
-         <h1 class="art-title">Advance Wars</h1>
-      </button>
-      <button class="art-container art-24">
-         <img src="images/art-images/Silence of the Lambs.jpg"
-              class="art-image"
-              alt="Silence of the Lambs">
-         <h1 class="art-title">Silence of the Lambs</h1>
-      </button>
-      <button class="art-container art-25">
-         <img src="images/art-images/Tomino's Hell.jpg"
-              class="art-image"
-              alt="Tomino's Hell">
-         <h1 class="art-title">Tomino's Hell</h1>
-      </button>
-      <button class="art-container art-26">
-         <img src="images/art-images/Better Than Never Tour.jpg"
-              class="art-image"
-              alt="Better Than Never Tour">
-         <h1 class="art-title">Better Than Never Tour</h1>
-      </button>
-      <button class="art-container art-27">
-         <img src="images/art-images/Eye of the Storm Tour.jpg"
-              class="art-image"
-              alt="Eye of the Storm Tour">
-         <h1 class="art-title">Eye of the Storm Tour</h1>
-      </button>
-      <button class="art-container art-28">
-         <img src="images/art-images/Best Served Cold Tour.jpg"
-              class="art-image"
-              alt="Best Served Cold Tour">
-         <h1 class="art-title">Best Served Cold Tour</h1>
-      </button>
-      <button class="art-container art-29">
-         <img src="images/art-images/Happy Ending Tour.jpg"
-              class="art-image"
-              alt="Happy Ending Tour">
-         <h1 class="art-title">Happy Ending Tour</h1>
-      </button>
-      <button class="art-container art-30">
-         <img src="images/art-images/Lobby Treats.jpg"
-              class="art-image"
-              alt="Lobby Treats">
-         <h1 class="art-title">Let's All Go to the Lobby</h1>
-      </button>
-      <button class="art-container art-31">
-         <img src="images/art-images/Don't Hug Me I'm Scared.jpg"
-              class="art-image"
-              alt="Don't Hug Me I'm Scared">
-         <h1 class="art-title">Don't Hug Me I'm Scared</h1>
-      </button>
-      <button class="art-container art-32">
-         <img src="images/art-images/Left 4 Breakfast.jpg"
-              class="art-image"
-              alt="Left 4 Breakfast">
-         <h1 class="art-title">Left 4 Breakfast</h1>
-      </button>
-      <button class="art-container art-33">
-         <img src="images/art-images/The Fifth Element.jpg"
-              class="art-image"
-              alt="The Fifth Element">
-         <h1 class="art-title">The Fifth Element</h1>
-      </button>
-      <button class="art-container art-34">
-         <img src="images/art-images/Limbo.jpg"
-              class="art-image"
-              alt="Limbo">
-         <h1 class="art-title">Limbo</h1>
-      </button>
-      <button class="art-container art-35">
-         <img src="images/art-images/Candle Cove.jpg"
-              class="art-image"
-              alt="Candle Cove">
-         <h1 class="art-title">Candle Cove</h1>
-      </button>
-      <button class="art-container art-36">
-         <img src="images/art-images/Super Meat Boy.jpg"
-              class="art-image"
-              alt="Super Meat Boy">
-         <h1 class="art-title">Super Meat Boy</h1>
-      </button>
-      <button class="art-container art-37">
-         <img src="images/art-images/Tres Espada.jpg"
-              class="art-image"
-              alt="Tres Espada">
-         <h1 class="art-title">Tres Espada</h1>
-      </button>
-   </div>
+   <main>
+      <div class="art-display">
+         <button class="art-container art-1">
+            <img src="images/art-images/Amadeus.webp"
+                 class="art-image"
+                 alt="Digital illustration homage of the movie Amadeus, featuring Salieri in blue and Mozart in red, by Bitter Pill Productions">
+            <span class="art-title">Amadeus</span>
+         </button>
+         <button class="art-container art-2">
+            <img src="images/art-images/Super Wario Bros.webp"
+                 class="art-image"
+                 alt="Digital illustration of the Super Wario Brothers, featuring Wario and Waluigi along with a chain chomp and some bobombs, by Bitter Pill Productions">
+            <span class="art-title">Super Wario Bros.</span>
+         </button>
+         <button class="art-container art-3">
+            <img src="images/art-images/Splatterhouse.webp"
+                 class="art-image"
+                 alt="Splatterhouse">
+            <span class="art-title">Splatterhouse</span>
+         </button>
+         <button class="art-container art-4">
+            <img src="images/art-images/Creepshow 2.webp"
+                 class="art-image"
+                 alt="Creepshow 2">
+            <span class="art-title">Creepshow 2</span>
+         </button>
+         <button class="art-container art-5">
+            <img src="images/art-images/What You Are.webp"
+                 class="art-image"
+                 alt="What You Are">
+            <span class="art-title">What You Are</span>
+         </button>
+         <button class="art-container art-6">
+            <img src="images/art-images/Sixteen Candles.webp"
+                 class="art-image"
+                 alt="Sixteen Candles">
+            <span class="art-title">Sixteen Candles</span>
+         </button>
+         <button class="art-container art-7">
+            <img src="images/art-images/Manhunt.webp"
+                 class="art-image"
+                 alt="Manhunt">
+            <span class="art-title">Manhunt</span>
+         </button>
+         <button class="art-container art-8">
+            <img src="images/art-images/Lilith.webp"
+                 class="art-image"
+                 alt="Lilith">
+            <span class="art-title">Lilith</span>
+         </button>
+         <button class="art-container art-9">
+            <img src="images/art-images/Doomsday.webp"
+                 class="art-image"
+                 alt="Doomsday">
+            <span class="art-title">Doomsday</span>
+         </button>
+         <button class="art-container art-10">
+            <img src="images/art-images/Altered Beast.webp"
+                 class="art-image"
+                 alt="Altered Beast">
+            <span class="art-title">Altered Beast</span>
+         </button>
+         <button class="art-container art-11">
+            <img src="images/art-images/Open Your Mind.webp"
+                 class="art-image"
+                 alt="Open Your Mind">
+            <span class="art-title">Open Your Mind</span>
+         </button>
+         <button class="art-container art-12">
+            <img src="images/art-images/Binding of Isaac.webp"
+                 class="art-image"
+                 alt="Binding of Isaac">
+            <span class="art-title">Binding of Isaac</span>
+         </button>
+         <button class="art-container art-13">
+            <img src="images/art-images/Carmen Sandiego.webp"
+                 class="art-image"
+                 alt="Carmen Sandiego">
+            <span class="art-title">Carmen Sandiego</span>
+         </button>
+         <button class="art-container art-14">
+            <img src="images/art-images/Akira.webp"
+                 class="art-image"
+                 alt="Akira">
+            <span class="art-title">Akira</span>
+         </button>
+         <button class="art-container art-15">
+            <img src="images/art-images/Nun Massacre.webp"
+                 class="art-image"
+                 alt="Nun Massacre">
+            <span class="art-title">Nun Massacre</span>
+         </button>
+         <button class="art-container art-16">
+            <img src="images/art-images/Five Nights at Freddy's.webp"
+                 class="art-image"
+                 alt="Five Nights at Freddy's">
+            <span class="art-title">Five Nights at Freddy's</span>
+         </button>
+         <button class="art-container art-17">
+            <img src="images/art-images/ClayFighter.webp"
+                 class="art-image"
+                 alt="ClayFighter">
+            <span class="art-title">ClayFighter</span>
+         </button>
+         <button class="art-container art-18">
+            <img src="images/art-images/Bloodrayne.webp"
+                 class="art-image"
+                 alt="Bloodrayne">
+            <span class="art-title">Bloodrayne</span>
+         </button>
+         <button class="art-container art-19">
+            <img src="images/art-images/Iznogoud.webp"
+                 class="art-image"
+                 alt="Iznogoud">
+            <span class="art-title">Iznogoud</span>
+         </button>
+         <button class="art-container art-20">
+            <img src="images/art-images/Don't Let Him In.webp"
+                 class="art-image"
+                 alt="Don't Let Him In">
+            <span class="art-title">Don't Let Him In</span>
+         </button>
+         <button class="art-container art-21">
+            <img src="images/art-images/Pokemon Violet.webp"
+                 class="art-image"
+                 alt="Pokemon Violet">
+            <span class="art-title">Pokemon Violet</span>
+         </button>
+         <button class="art-container art-22">
+            <img src="images/art-images/Hungry Like the Wolf.webp"
+                 class="art-image"
+                 alt="Hungry Like the Wolf">
+            <span class="art-title">Hungry Like the Wolf</span>
+         </button>
+         <button class="art-container art-23">
+            <img src="images/art-images/Advance Wars.webp"
+                 class="art-image"
+                 alt="Advance Wars">
+            <span class="art-title">Advance Wars</span>
+         </button>
+         <button class="art-container art-24">
+            <img src="images/art-images/The Silence of the Lambs.webp"
+                 class="art-image"
+                 alt="Silence of the Lambs">
+            <span class="art-title">Silence of the Lambs</span>
+         </button>
+         <button class="art-container art-25">
+            <img src="images/art-images/Tomino's Hell.webp"
+                 class="art-image"
+                 alt="Tomino's Hell">
+            <span class="art-title">Tomino's Hell</span>
+         </button>
+         <button class="art-container art-26">
+            <img src="images/art-images/Better Than Never Tour.webp"
+                 class="art-image"
+                 alt="Better Than Never Tour">
+            <span class="art-title">Better Than Never Tour</span>
+         </button>
+         <button class="art-container art-27">
+            <img src="images/art-images/Eye of the Storm Tour.webp"
+                 class="art-image"
+                 alt="Eye of the Storm Tour">
+            <span class="art-title">Eye of the Storm Tour</span>
+         </button>
+         <button class="art-container art-28">
+            <img src="images/art-images/Best Served Cold Tour.webp"
+                 class="art-image"
+                 alt="Best Served Cold Tour">
+            <span class="art-title">Best Served Cold Tour</span>
+         </button>
+         <button class="art-container art-29">
+            <img src="images/art-images/Happy Ending Tour.webp"
+                 class="art-image"
+                 alt="Happy Ending Tour">
+            <span class="art-title">Happy Ending Tour</span>
+         </button>
+         <button class="art-container art-30">
+            <img src="images/art-images/Lobby Treats.webp"
+                 class="art-image"
+                 alt="Lobby Treats">
+            <span class="art-title">Let's All Go to the Lobby</span>
+         </button>
+         <button class="art-container art-31">
+            <img src="images/art-images/Don't Hug Me I'm Scared.webp"
+                 class="art-image"
+                 alt="Don't Hug Me I'm Scared">
+            <span class="art-title">Don't Hug Me I'm Scared</span>
+         </button>
+         <button class="art-container art-32">
+            <img src="images/art-images/Left 4 Breakfast.webp"
+                 class="art-image"
+                 alt="Left 4 Breakfast">
+            <span class="art-title">Left 4 Breakfast</span>
+         </button>
+         <button class="art-container art-33">
+            <img src="images/art-images/The Fifth Element.webp"
+                 class="art-image"
+                 alt="The Fifth Element">
+            <span class="art-title">The Fifth Element</span>
+         </button>
+         <button class="art-container art-34">
+            <img src="images/art-images/Limbo.webp"
+                 class="art-image"
+                 alt="Limbo">
+            <span class="art-title">Limbo</span>
+         </button>
+         <button class="art-container art-35">
+            <img src="images/art-images/Candle Cove.webp"
+                 class="art-image"
+                 alt="Candle Cove">
+            <span class="art-title">Candle Cove</span>
+         </button>
+         <button class="art-container art-36">
+            <img src="images/art-images/Super Meat Boy.webp"
+                 class="art-image"
+                 alt="Super Meat Boy">
+            <span class="art-title">Super Meat Boy</span>
+         </button>
+         <button class="art-container art-37">
+            <img src="images/art-images/Espada.webp"
+                 class="art-image"
+                 alt="Tres Espada">
+            <span class="art-title">Espada</span>
+         </button>
+         <button class="art-container art-38">
+            <img src="images/art-images/Salad Fingers.webp"
+                 class="art-image"
+                 alt="Salad Fingers">
+            <span class="art-title">Salad Fingers</span>
+         </button>
+      </div>
+   </main>
 
    <footer>
       <p>For all your creative aches and pains</p>
@@ -336,7 +349,7 @@
                  title="Github">
          </a>
       </section>
-      <p>&copy;2020 - Bitter Pill Productions</p>
+      <p>&copy;<span id="year"></span> - Bitter Pill Productions</p>
    </footer>
 </body>
 

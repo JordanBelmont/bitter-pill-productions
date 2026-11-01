@@ -208,7 +208,11 @@
    }
 
    .art-37 {
-      order: 36;
+      display: none;
+   }
+
+   .art-38 {
+      display: none;
    }
 }
 
@@ -360,7 +364,8 @@
       order: 29;
    }
 
-   .art-37 {
+   .art-38 {
+      display: block;
       order: 37;
    }
 }
@@ -376,5 +381,13 @@
    .art-25 {
       width: 75%;
       display: flex;
+   }
+
+   .art-37 {
+      display: block;
+   }
+
+   .art-38 {
+      display: none;
    }
 }

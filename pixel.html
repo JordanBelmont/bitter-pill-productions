@@ -3,8 +3,8 @@
 
 <head>
    <meta charset="utf-8">
-   <meta name="websitedescription"
-         content="test">
+   <meta name="description"
+         content="Pixel art, brought to you by Jordan Belmont.">
    <meta name="viewport"
          content="width=device-width, initial-scale=1">
    <link rel="icon"
@@ -29,13 +29,15 @@
            src="javascript/lightbox.js"></script>
    <script defer
            src="javascript/darkMode.js"></script>
+            <script defer 
+           src="javascript/year.js"></script>
 
-   <title>Bitter Pill Productions: Pixel</title>
+   <title>Pixel | Bitter Pill Productions</title>
 </head>
 
 <body>
    <header>
-      <a href="./index.html"
+      <a href="./index"
          class="pill-link">
          <img class="pill-light"
               src="icons/logo/bitterpill-light.png"
@@ -50,26 +52,28 @@
       <nav id="navBurger">
          <ul class="nav-ul">
             <li class="nav-li"><a class="nav-link"
-                  href="./art.html">ART</a></li>
+                  href="./art">ART</a></li>
             <li class="nav-li"><a class="nav-link"
-                  href="./404.html">UI/UX</a></li>
+                  href="./404">UI/UX</a></li>
             <li class="nav-li"><a class="nav-link"
-                  href="./code.html">CODE</a></li>
+                  href="./code">CODE</a></li>
             <li class="nav-li"><a class="pixel-link"
-                  href="./pixel.html">PIXEL</a></li>
+                  href="./pixel">PIXEL</a></li>
             <li class="nav-li"><a class="nav-link"
-                  href="./blog.html">BLOG</a></li>
+                  href="./blog">BLOG</a></li>
             <li class="nav-li"><a class="nav-link"
-                  href="./bio.html">BIO</a></li>
+                  href="./bio">BIO</a></li>
          </ul>
       </nav>
       <button class="burger-button"
               id="burgerButton"
+              type="button"
               aria-label="Open menu"
               aria-expanded="false">
          <svg viewBox="0 0 100 80"
               width="40"
-              height="40">
+              height="40"
+              aria-hidden="true">
             <path class="line line1"
                   d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
             <path class="line line2"
@@ -80,16 +84,18 @@
       </button>
    </header>
 
-   <div class="pixel-display">
-      <div class="pixel-card">
-         <button class="pixel-container">
-            <img src="images/pixel-images/Modok.gif"
-                 class="pixel-image"
-                 alt="Modok">
-            <h1 class="pixel-title">Modok</h1>
-         </button>
+   <main>
+      <div class="pixel-display">
+         <div class="pixel-card">
+            <button class="pixel-container">
+               <img src="images/pixel-images/Modok.gif"
+                    class="pixel-image"
+                    alt="Modok">
+               <span class="pixel-title">Modok</span>
+            </button>
+         </div>
       </div>
-   </div>
+   </main>
 
    <footer>
       <p>For all your creative aches and pains</p>
@@ -122,7 +128,7 @@
                  title="Github">
          </a>
       </section>
-      <p>&copy;2020 - Bitter Pill Productions</p>
+      <p>&copy;<span id="year"></span> - Bitter Pill Productions</p>
    </footer>
 </body>
 

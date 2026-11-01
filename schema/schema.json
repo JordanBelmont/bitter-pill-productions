@@ -1,0 +1,71 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://www.bitterpillproductions.com/#person",
+      "name": "Jordan Belmont",
+      "jobTitle": "Full-Stack Creative",
+      "description": "Multidisciplinary creative specializing in illustration, UI/UX design, copywriting, and front-end web development.",
+      "url": "https://www.bitterpillproductions.com/",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Portishead",
+        "addressCountry": "GB"
+      },
+      "knowsAbout": [
+        "Front-End Web Development",
+        "UI/UX Design",
+        "Illustration",
+        "Pixel Art",
+        "Copywriting",
+        "Tailwind CSS",
+        "JavaScript",
+        "ReactJS",
+        "TypeScript",
+        "Node JS",
+        "Mongo DB",
+        "Git",
+        "GitHub",
+        "Terminal",
+        "Web Hosting"
+      ],
+      "worksFor": {
+        "@id": "https://www.bitterpillproductions.com/#organization"
+      },
+      "founder": {
+        "@id": "https://www.bitterpillproductions.com/#organization"
+      },
+      "sameAs": [
+        "https://uk.linkedin.com/in/jordanbelmont",
+        "https://github.com/JordanBelmont"
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://www.bitterpillproductions.com/#organization",
+      "name": "Bitter Pill Productions",
+      "url": "https://www.bitterpillproductions.com/",
+      "logo": "https://www.bitterpillproductions.com/logo.png",
+      "description": "Freelance creative studio specializing in illustration, UI/UX design, copywriting, and front-end web development.",
+      "founder": {
+        "@id": "https://www.bitterpillproductions.com/#person"
+      },
+      "employee": {
+        "@id": "https://www.bitterpillproductions.com/#person"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Portishead",
+        "addressCountry": "GB"
+      },
+      "areaServed": { 
+         "@type": "Place", 
+         "name": "Worldwide" 
+      },
+      "sameAs": [
+        "https://www.instagram.com/bitterpillproductions/"
+      ]
+    }
+  ]
+}

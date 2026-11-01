@@ -4,7 +4,7 @@
 <head>
    <meta charset="utf-8">
    <meta name="description"
-         content="Illustration, Copywriting and Front-End Web Development, brought to you by Jordan Belmont">
+         content="Illustration • Copywriting • UI/UX • Web Development | The Portfolio of Jordan Belmont">
    <meta name="viewport"
          content="width=device-width, initial-scale=1">
 
@@ -21,13 +21,17 @@
          href="icons/favicon/favicon-16x16.png">
    <link rel="apple-touch-icon"
          href="icons/favicon/apple-touch-icon.png">
-
    <link rel="stylesheet"
          href="css/style.css">
+
    <script defer
            src="javascript/burger.js"></script>
    <script defer
            src="javascript/darkMode.js"></script>
+   <script defer
+           src="javascript/year.js"></script>
+   <script type="application/ld+json"
+           src="/schema/schema.json"></script>
 
    <title>Bitter Pill Productions</title>
 
@@ -35,7 +39,7 @@
 
 <body>
    <header>
-      <a href="./index.html"
+      <a href="./index"
          class="pill-link">
          <img class="pill-light"
               src="icons/logo/bitterpill-light.png"
@@ -50,17 +54,17 @@
       <nav id="navBurger">
          <ul class="nav-ul">
             <li class="nav-li"><a class="nav-link"
-                  href="./art.html">ART</a></li>
+                  href="./art">ART</a></li>
             <li class="nav-li"><a class="nav-link"
-                  href="./404.html">UI/UX</a></li>
+                  href="./404">UI/UX</a></li>
             <li class="nav-li"><a class="nav-link"
-                  href="./code.html">CODE</a></li>
+                  href="./code">CODE</a></li>
             <li class="nav-li"><a class="nav-link"
-                  href="./pixel.html">PIXEL</a></li>
+                  href="./pixel">PIXEL</a></li>
             <li class="nav-li"><a class="nav-link"
-                  href="./blog.html">BLOG</a></li>
+                  href="./blog">BLOG</a></li>
             <li class="nav-li"><a class="nav-link"
-                  href="./bio.html">BIO</a></li>
+                  href="./bio">BIO</a></li>
          </ul>
       </nav>
       <button class="burger-button"
@@ -123,7 +127,7 @@
                  title="Github">
          </a>
       </section>
-      <p>&copy;2020 - Bitter Pill Productions</p>
+      <p>&copy;<span id="year"></span> - Bitter Pill Productions</p>
    </footer>
 </body>
 
